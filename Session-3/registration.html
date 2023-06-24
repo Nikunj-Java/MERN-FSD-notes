@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form action="test" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" placeholder="Enter Your First Name">
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name">
+
+
+        <label for="uname">User Name:</label>
+        <input type="text" name="uname" id="uname" placeholder="userName@gmail.com">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob">
+        <br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="9876543210">
+
+        <label  for="profile"> Profile Picture:</label>
+        <input type="file" name="profile" id="profile">
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age">
+
+
+        <br><br>
+
+        Languages Known:
+
+        <input type="checkbox" name="lang1" id="lang1" value="eng" checked >
+        <label for="eng">English</label>
+        <input type="checkbox" name="lang2" id="lang2" value="hindi" >
+        <label for="hindi">Hindi</label>
+        <input type="checkbox" name="lang3" id="lang3" value="marathi" >
+        <label for="marathi">Marathi</label>
+
+        <br><br>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="male" checked>
+        <label>Male</label>
+        <input type="radio" name="gender" id="gender" value="female">
+        <label>Female</label>
+        <input type="radio" name="gender" id="gender" value="other">
+        <label>Other</label>
+
+        <br><br>
+        <!--Dropdown-->
+        <label for="edu">Educational Details</label>
+
+        <select name="edu" id="edu">
+            <option value="ssc">SSC</option>
+            <option value="hsc">HSC</option>
+            <option value="graduate">Graduate</option>
+            <option value="pg">Post Graduate</option>
+        </select>
+
+        <br><br>
+
+        <label for="address">Address</label>
+
+        <textarea id="address" row="4" cols="50"></textarea><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="pass" name="pass" placeholder="Enter your Password">
+
+        <input type="submit" value="SAVE">
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

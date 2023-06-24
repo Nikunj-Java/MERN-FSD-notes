@@ -7,9 +7,16 @@
 </head>
 <body>
 
-    <form>
+    <form action="demo.php">
 
         Select Month: <input type="month"><br><br>
+
+        Select Date:
+        <input type="date" name="date" id="date" placeholder="dd-mm-yyyy" value="" 
+        min="2000-01-01" max="2023-06-24">
+        <br><br>
+
+    
         Range: <input type="range" min="18" max="70"><br><br>
 
         Favorite Color:
@@ -17,6 +24,18 @@
 
         <input type="hidden" value="secret" name="user" id="user">
         <br><br>
+
+        Pincode:
+        <input type="number" name="pincode" id="pincode" placeholder="Enter Your Pincode"><br><br>
+
+        <input type="checkbox" id="bike" name="bike" value="yes">Do You Have a Bike? <br><br>
+
+        Select Your Gender? 
+        <input type="radio" id="male" name="male">Male
+        <input type="radio" id="male" name="male">Female<br><br>
+
+        Select File: <input type="file" id="file" name="file">
+
 
         <input type="submit" value="Register" disabled>
 
