@@ -11,13 +11,15 @@
 
      <form action="demo.php" method="post">
         Email Id:
-        <input type="text" placeholder="Enter Your Email" required> <br><br>
+        <input type="text" id="email" name="email" placeholder="Enter Your Email" required> <br><br>
 
         Password:
-        <input type="password" placeholder="Enter your password" minlength="8" required><br><br>
+        <input type="password" id="pass" name="pass" placeholder="Enter your password" minlength="8" required><br><br>
 
 
         <input type="submit" value="Login">
+        <br><br>
+        <input type="button" onclick="action()" value="CALL NOW">
      </form>
 
 
