@@ -52,6 +52,21 @@ when include some content in our page , this tags shows a meaning of that conten
 6. <footer> : contact information,connect us info, copyright info, some kind of basic developer information, site navigation information
 
 
+===============================================================================================================
+
+<details> tag
+
+- it is basically helping you to provide details section by clicking on some title
+-  title you can add using summary tag and details add using <p> tag
+
+<details>
+		<summary>Title</summary>
+		<p>Yout Paragraph</p>
+</details>
+
+
+
+
 
 
 
