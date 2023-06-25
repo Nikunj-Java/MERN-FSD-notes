@@ -76,6 +76,16 @@ when include some content in our page , this tags shows a meaning of that conten
 	<img src="" alt="">
 </picture>
 
+--------------------------------
+
+eg:
+ <picture>
+        <source media="(min-width:450px)" srcset="image/earth.png">
+        <img src="image/nature.jpg" alt="myImage">
+        
+    </picture>
+--------------------------------
+
 -  <picture> tag element give you the power when web page is loading in different screen sizes.
 
 - browser automatically choose the best image avaialable to display
