@@ -1,0 +1,20 @@
+Frames in HTML
+-----------------------------
+- used to divide your browser window into multiple sections
+- In each section u can load a separate html page
+- If i want  to create a home page with multiple section and load separate HTML Page then we can use frames.
+- we can use frameset tag earlier when we are using HTML 4 version. this tag is actually depricated in HTML5
+- so we will use th latest version  which is Iframe
+- if you want to load multiple frames using frame set let use below code:
+
+IFrame:
+------------------------------
+Iframe is basically helping us to load the separate file or a video or a map in your page.
+
+
+
+
+<iframe width="683" height="384" src="https://www.youtube.com/embed/ji4z0KA0AAQ" title="Internal feud boils over in Russia; Prigozhin threatens &#39;march for justice&#39;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+to include a youtube video in a frame in HTML copy the embded code
