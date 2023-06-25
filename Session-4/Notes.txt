@@ -18,3 +18,23 @@ Iframe is basically helping us to load the separate file or a video or a map in 
 
 
 to include a youtube video in a frame in HTML copy the embded code
+***************************************************************************************************************
+AUDIO & VIDEO FILES
+***************************************************************************************************************
+
+- to include action in a page <audio> tag
+
+-<audio><audio>
+
+-inside audio tag pass <source> tag with audio file
+
+- <source> tag has two attributes
+	1. src= file source
+	2. type= audio type like audio/mpeg or audio/ogg
+
+- audio tag attributes by default they have true value
+	1.autoplay= will play a song automatically when page loaded depends  on broswer
+	2. loop = repeat the song
+	3. controls= will add control to  strat , stop, increase or decrease the volume
+
+-<video> tag is used to include the video in our HTML page
