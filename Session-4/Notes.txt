@@ -38,3 +38,35 @@ AUDIO & VIDEO FILES
 	3. controls= will add control to  strat , stop, increase or decrease the volume
 
 -<video> tag is used to include the video in our HTML page
+***************************************************************************************************************
+HTML SCHEMATIC TAGS
+***************************************************************************************************************
+
+when include some content in our page , this tags shows a meaning of that content
+
+1. <header>: include the intriductory information of page like title ,logo...
+2. <nav>: include navigation liknks, so we can jump from one page to another, sometimes we can join nav and header togather as well
+3. <main> : include main content of page, you can use only one main  per page
+4. <article>: includes some important content , which is providing extra information kind of blog.
+5. <aside> : some content which is less important, to add some complementary details.
+6. <footer> : contact information,connect us info, copyright info, some kind of basic developer information, site navigation information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
