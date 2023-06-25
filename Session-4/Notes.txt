@@ -64,6 +64,24 @@ when include some content in our page , this tags shows a meaning of that conten
 		<p>Yout Paragraph</p>
 </details>
 
+===============================================================================================================
+
+<picture> tag
+
+<picture> is used to to display picture or a banner to provide flexibility to developer
+
+
+<picture>
+	<source media="" srcset="">
+	<img src="" alt="">
+</picture>
+
+-  <picture> tag element give you the power when web page is loading in different screen sizes.
+
+- browser automatically choose the best image avaialable to display
+- adjust the borswer size and check the output
+- some old IE version are Not Supporting This Feature
+
 
 
 
