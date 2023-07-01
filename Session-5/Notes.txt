@@ -1,0 +1,395 @@
+*************************************************************
+Introduction to CSS
+*************************************************************
+1. CSS- Cascading Style Sheets
+2. To design a web page we can use so many properties like
+	-background color
+	-font color
+	-font size
+	-font family
+	-border
+	-margin
+	-padding
+	-height
+	-width
+	-text-align
+by using this properties we can  give some style to our webpage
+
+
+How to style?
+---------------------
+
+There are three ways to style
+1. Internal Stylesheet
+2. External StyleSheet
+3. Inline Style Sheet
+
+
+1. INTERNAL STYLESHEET:
+--------------------------
+
+when a styel is prepared inside HTML page using <style></style> tag , then it is called as INTERNAL STYLE SHEET
+
+EG:
+
+<!--1. Internal StyleSheet-->
+    <style>
+        /*
+            write css here
+        */
+    </style>
+
+2. EXTERNAL STYLESHEET:
+--------------------------
+when stylesheet is prepared using separate file with.css extension and included in HTML webpage using <link> tag is called EXTERNAL STYLESHEET
+
+
+EG:
+- CREATE style.css file separately and then add as mentioned below
+
+<!--2. External Style Sheet-->
+<link href="style.css" rel="stylesheet" type="text/css">
+
+
+
+3. INLINE STYLESHEET
+------------------------------
+-When you want to style a particular tag only not all tags with same name at that time we use inline stylesheet
+
+
+- it can be done as below
+     <!--3. Inline StyleSheet-->
+    <h1 style="color: red;">Hello World</h1>
+
+
+
+example:
+---------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <!--1. Internalstylesheet-->
+    <style>
+
+        h1{
+            background-color: yellow;
+        }
+
+    </style>
+
+
+    <!--2. Externalstylesheet-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    
+
+</head>
+<body>
+
+    <h1>Hello World</h1>
+    <!--3. inlinestylesheet-->
+    <h1 style="font: bold; color: brown;">Session-5</h1>
+    <p>Welcome to Introduction to CSS</p>
+    
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+
+
+WHAT ARE SELECTORS?
+
+TYEPS:
+1. ELEMENT SELECTOR
+2. GROUP SELECTOR
+3. UNIVERSAL SELECTOR
+4. COMBINATOR SELECTOR
+5. CLASS SELECTOR
+6. ID SELECTOR
+
+
+1. ELEMENT SELECTOR
+---------------------------
+Just Use Element Name and Define Your CSS
+
+example:
+---------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: lightblue;
+
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+         
+    </style>
+
+</head>
+<body>
+
+    <h1>Welcome to CSS</h1>
+ 
+</body>
+</html>
+
+-----------------------------------------------------------------------------------------------
+
+
+2. GROUP SELECTOR:
+----------------------
+
+giving CSS to the Group of Elements togather
+
+eg:
+
+	 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: lightblue;
+
+        }
+        h1,h2,h3,h4,h5{
+            color: white;
+            text-align: center;
+        }
+       
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Welcome to CSS</h1>
+    <h2>Welcome to CSS</h2>
+    <h3>Welcome to CSS</h3>
+    <h4>Welcome to CSS</h4>
+    <h5>Welcome to CSS</h5>
+   
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------
+
+3. UNIVERSAL SELECTOR:
+
+- IT WILL SELECT ALL TAGS AND GIVE SAME CSS TO ALL
+
+example:
+
+------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: lightblue;
+
+        }
+         
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aqua;
+            color: royalblue;
+            padding: auto;
+             
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Welcome to CSS</h1>
+    <h2>Welcome to CSS</h2>
+    <h3>Welcome to CSS</h3>
+    <h4>Welcome to CSS</h4>
+    <h5>Welcome to CSS</h5>
+ 
+</body>
+</html>
+
+
+--------------------------------------------------------------------------------------------------------
+4. COBINATOR SELECTOR:
+----------------------------------------------
+showing relationship between the selectors.
+
+	a. descent selector(space)
+	------------------------------
+	div p{
+            background-color: yellowgreen;
+            color: white;
+        }
+
+	note: selecting all elements that are descents of a specified element
+		it will select all p tags of div like child, grand child, grand grand child as well
+         
+	b. child selector(>)
+	------------------------------
+	
+	div>p {
+		background-color: yellowgreen;
+            	color: white;
+	}
+	select only child element of the specified element. selects only the child of div tag
+
+	c. adjacent sibling selector(+);
+	------------------------------------
+	selecting the direct sibling of an element which is adjacent(first sibling only)
+	
+	div+p {
+		background-color: yellowgreen;
+            	color: white;
+	}
+	it will select only p siblings of div tag
+
+	d. general sibling selector (~)
+	-----------------------------------
+	select all the elements that are sibblings of specified element.
+ 	
+	div~p{
+            background-color: yellow;
+            color: red;
+        }
+	it will apply the css to all siblings of p of div tag
+
+EXAMPLE:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div p{
+            background-color: yellowgreen;
+            color: white;
+        }
+             
+
+    </style>
+</head>
+<body>
+
+
+    <!--GRANDFATHER-----FATHER-----CHILD-----GRANDCHILD----GRAND GRANDCHILD(DESCENT)
+    -->
+
+    <h1>Combinator Selector Examples</h1>
+
+    <div>
+        <h2>THIS IS DIV 1</h2>
+        <p>This is Paragraph-1 inside div-1</p>
+        <p>This is Paragraph-2 inside div-1</p>
+
+        <div>
+            <h2>THIS IS DIV 2</h2>
+            <p>This is Paragraph-1 inside div-2</p>
+            <p>This is Paragraph-2 inside div-2</p>
+        </div>
+        <p>Sibling 1 DIV2</p>
+         
+         
+    </div>
+        <p>Sibling 1 DIV1</p>
+         
+         
+    
+</body>
+</html>
+
+
+6. ID SELECTOR:
+---------------------------------------------------------------------------------------------------------------
+
+-start writting the id name with #symbol
+-name you can give anything
+
+#center{
+	text-align:center;
+}
+
+toapply this on element use id attribute.
+<p id="center">I am JAVA FSD | MEAN FSD | MEARN FSD Trainer</p>
+
+***************************************************************************************************************
+
+
+CSS Colors
+------------
+
+we give the colors in multiple format
+
+1. RGB: RED,GREEN,BLUE
+	rgb(red,green,blue)
+	note: each paramaeter is in range of 0-255
+	0-------->0%
+	255------>100%
+
+	red color: rgb(255,0,0)
+	yellow color: rgb(255,255,0)
+
+2. HEX CODE: HEXA DECIMAL COLOR CODE: It is combination of 0-16 (16 letters)
+	0-9
+	a-f(10-a,11-b,12-c,13-d,14-e,15-f)
+
+	for eg:
+	#fffffF (white)
+	#000000 (black)
+	#ff0000 (red)
+
+3. RGBA :RED GREEN BLUE ALPHA
+	ALPHA IS VALUE BETWEEN 0.0(fully transperent) to 1.0(solid)
+
+	color:rgba(255,0,0,0.6)
+	try to change the value of last parameter and see the difference
+
+4. HSL: HUE SATURATION AND LIGHTNESS
+	Hue: Degree of color wheel (0-360)
+	saturation: percentage
+	Lightness: percentage
+	
+	h1{
+		color:hsl(318.46deg,55.7%,41.9%)
+	}
+5. ADDING TRANSPARENCY TO YOUR PAGE USE hsla color
+	a -alpha
+	h1{
+		color:hsla(318.46deg,55.7%,41.9%,0.4)
+	}
+
+
+
+
