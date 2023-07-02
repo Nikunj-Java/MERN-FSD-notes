@@ -106,3 +106,258 @@ Border to Any Element
 YOU CAN ALL ALL THIS AT SINGLE LINE ALSO:
 -----------------------------------------
 	border: border-width,border-style,border-color;
+
+Example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 20%;
+            background-color: yellow;
+            margin: 5px;
+        }
+        .solid{
+            border-style: solid;
+            border-width: 2px;
+            border-color: brown;
+        }
+        .dotted{
+            border: 2px dotted blue;
+        }
+        .double{
+            border: 6px double black;
+        }
+        .dashed{
+            border: 4px dashed red;
+        }
+        .inset{
+            border:10px inset red;
+        }
+        .outset{
+            border: 10px outset grey;
+        }
+        .groovy{
+            border: 10px groove royalblue;
+        }
+        .ridge{
+            border: 10px ridge red;
+        }
+        .custom{
+            border-top: 10px solid red;
+            border-bottom: 10px solid gray;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+    <div class="solid">Solid</div>
+    <div class="dotted">Dotted</div>
+    <div class="double">Double</div>
+    <div class="dashed">Dashed</div>
+    <div class="inset">Inset</div>
+    <div class="outset">Outset</div>
+    <div class="groovy">Groovy</div>
+    <div class="ridge">Ridge</div>
+    <div class="custom">Custom</div>
+    
+</body>
+</html>
+
+***************************************************************************************************************
+Padding:
+***************************************************************************************************************
+
+Padding is just giving gaps between content and its border
+
+
+Example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: gray;
+            justify-content: center;
+        }
+        div{
+            margin: 30px;
+            width: 30%;
+            height: 100px;
+            background-color: yellowgreen;
+            color: white;
+            border: 2px solid darkblue;
+            padding: 50px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="center">
+        This is My Div
+    </div>
+    
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------
+
+***************************************************************************************************************
+Box-sizing Property
+***************************************************************************************************************
+
+-without using box sizing property everytime when you include the padding that is going to increase height and width of your element
+-but using box sizing property border box property we can fix this up
+
+
+Example:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 300px;
+            height: 100px;
+            border: 4px solid blue;
+            box-sizing: border-box;
+            text-align: center;
+             
+            
+        }
+        .div2{
+            margin-top: 10px;
+            width: 300px;
+            height: 100px;
+            border: 4px solid red;
+            padding: 40px;
+            box-sizing: border-box;
+            text-align: center;
+             
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="div1">This is my Div 1</div>
+    <div class="div2">This is my Div 2</div>
+    
+</body>
+</html>
+
+
+-------------------------------------------------------------------------------------------------------------
+
+***************************************************************************************************************
+Display
+***************************************************************************************************************
+- How you want to display your element in a page
+- by default each element is having its own display.
+- like div,p,section,headings,artcle are having display as a block: means the each element will come in new line
+- few elements also have a dispaly like they try to adjust in a same line(inline display like :span tag)
+- eg: img,a,input,span etc...
+- inline elements never accept height and width
+- to give height and width you can set  the display to block
+- to display block element as block + display them in a line we use the display value inline+block
+
+
+Example:1
+--------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        h1{
+            display: inline-block;
+            height: 100px;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+    <h1>Heading 1</h1>
+    
+</body>
+</html>
+
+
+
+--------------------------------------------
+
+Example:2 
+--------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            
+            width: 30%;
+            height: 100px;
+            border: 4px solid red;
+            /*after adding display:block height and width will work*/
+            display: block;
+        }
+
+        /*inline elements never accept height and width*/
+
+    </style>
+</head>
+<body>
+
+    <h1>BLOCK DISPLAY</h1>
+    <h1>This is Heading 1</h1>
+    <p>This is paragraph</p>
+    <div>This is div</div>
+    <h1>Inline Display</h1>
+    <img src="" alt="logo1"><img src="" alt="logo2"><img src="" alt="logo3">
+    <a href="#">Click Me</a>
+    <span>Offer Page</span>
+    <input type="text" name="search">
+    
+</body>
+</html>
+
+
+
+--------------------------------------------
+
