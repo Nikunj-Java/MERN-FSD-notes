@@ -1,0 +1,108 @@
+***************************************************************************************************************SPECIFICITY:
+***************************************************************************************************************
+CLACULATING THE PRIORITY OF DIFFERENT CSS APLLIED TO THE PAGE
+
+see the below example for reference:
+---------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*4. Smallest priority to tag*/
+        h1{
+            color: red;
+        }
+        /*2. Low Prioriy to class*/
+        .blue{
+            color: blue;
+        }
+        /*2. High Priority to id*/
+        #green{
+            color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Heading 1</h1>
+    <h1 class="blue">Heading 2</h1>
+    <h1 class="blue" id="green">Heading 3</h1>
+    <!--Highest Priority to inline CSS-->
+    <h1 class="blue" id="green" style="color: violet;">Heading 4</h1>
+    
+</body>
+</html>
+
+***************************************************************************************************************
+Margin
+***************************************************************************************************************
+- it is basically indicating the gaps between the parent and the element
+- to give all side with same margin we can use 'margin property'
+- margin:10px meansit will give the gap of 10px from all side
+- like if you want to give margin from left,right,top,bottom, we have
+	1. margin-top
+	2. margin-right
+	3. margin-bottom
+	4. margin-left
+	5. margin   (Overall Margin)
+	6. margin:auto (it will auto adjust element in center from left and right side)
+
+
+example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 50%;
+            height: 100px;
+            border: 1px solid transparent;
+            margin: 10px;
+            background-color: yellow;
+        }
+        .child{
+            width: 30%;
+            height: 30px;
+            margin: 30px auto;
+            background-color: royalblue;
+            color: white;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="child">
+            Hello World
+        </div>
+    </div>
+    
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+
+***************************************************************************************************************
+Border
+***************************************************************************************************************
+Border to Any Element
+
+	1.border-style: different style of border you can give (solid, dashed,dotted)
+	2.border-width: how much width(Thickness) you want to give on border (1px,pcm,1in....)
+	3.border-color: which color you want to give
+
+YOU CAN ALL ALL THIS AT SINGLE LINE ALSO:
+-----------------------------------------
+	border: border-width,border-style,border-color;
