@@ -43,3 +43,22 @@ FLEX LAYOUT:
 		6. space-between: give the space between elements
 	
 	8. align-items: helps to align flex-item properly
+
+
+***************************************************************************************************************
+GRID LAYOUT
+***************************************************************************************************************
+-here we can adjust our elements in 2 Dimensions
+-we can adjust our elements in combination of rows and columns
+-to work with this layout we need display as grid.
+-grid-template-column : proeprty and you can give the values  separeted space according to the no of columns you want in grid
+
+- to give the gaps from both rows and column use gap property
+- row-gap==> give gaps between rows
+- column gap==> give the gaps between columns
+
+GRID AREA:
+------------
+
+basically specifying a name tomthe grid item
+that we can use as reference in a grid container

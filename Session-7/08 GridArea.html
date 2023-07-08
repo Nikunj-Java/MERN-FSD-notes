@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            grid-area: header;
+            background-color: yellow;
+        }
+        .box2{
+            grid-area: left;
+            background-color: greenyellow;
+        }
+        .box3{
+            grid-area: main;
+            background-color: palevioletred;
+        }
+        .box4{
+            grid-area: right;
+            background-color: blueviolet;
+        }
+        .box5{
+            grid-area: footer;
+            background-color: gray;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+                                  'left main main main right right '
+                                  'left footer footer footer footer footer';
+            gap:5px;
+            background-color: bisque;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="box1">
+            <h1>Welcome to the World of CSS</h1>
+        </div>
+        <div class="box2">
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+                <li>SOCIAL MEDIA</li>
+            </ul>
+        </div>
+        <div class="box3">
+            <p>Hello World!! this is out seventh Session</p>
+        </div>
+        <div class="box4">
+            <p>Hello World!! this is out seventh Session</p>
+        </div>
+        <div class="box5">
+            <h1>Footer Section</h1>
+        </div>
+    </div>
+    
+</body>
+</html>
