@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            height: 500px;
+            background-color: lightslategray;
+            align-items: stretch;
+            align-content: center;
+        }
+        .flex-item{
+           font-size: 24px;
+           border: 2px solid red;
+           margin:  5px;
+           padding: 5px;
+           text-align: center;
+        }
+        .flex-item1{
+            width: 40%;
+        }
+        .flex-item2{
+            width: 30%;
+        }
+        .flex-item3{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item flex-item1" style="background-color: yellowgreen;">P</div>
+        <div class="flex-item flex-item2" style="background-color: yellow;">Q</div>
+        <div class="flex-item flex-item3" style="background-color: lightblue;">R</div>
+    </div>
+    
+</body>
+</html>

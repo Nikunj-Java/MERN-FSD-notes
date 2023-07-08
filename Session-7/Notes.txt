@@ -1,0 +1,45 @@
+***************************************************************************************************************
+FLEX LAYOUT:
+***************************************************************************************************************
+
+- Flex layout is one kind of flex box which is trying to adjust the element in One Dimension
+
+- Layout means we can create using flex is flexible layout
+
+- Properties:
+-------------------
+	1. display: flex
+		- it will try to adjust all elements in a single row
+
+
+	2. flex-wrap:
+		- by default the value of flex-wrap is no wrap: means  it will adjust all the elements in one row
+		- if  you want to create multiple rows we use wrap.
+	
+	3.wrap-reverse:
+		- it will wrap in new row if required it display the element in reverse order
+
+
+	4. flex-direction:
+		- it dicides how we want to display the element.
+		- the default value is row
+		- if the value given as column: display the items vertically from top to bottom
+	
+	5. column-reverse:
+		-display items vertically from bottom to top.
+
+	6. flex-flow:
+		- if you want to combine flex-direction and flex-wrap togather we use flex-flow
+		- flex:flow: row wrap:
+		- first property value is for flex-direction & second property value is for flex-wrap
+
+	7. justify-content
+		- used to align items in a flex-container
+		1. flex-start: start from the flex start position
+		2. flex-end:start from the end
+		3. center: align elements in center
+		4. space-around: give the space around the element
+		5. space-evenly: distribute the space evenly in all elements
+		6. space-between: give the space between elements
+	
+	8. align-items: helps to align flex-item properly
