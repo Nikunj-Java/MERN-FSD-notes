@@ -39,3 +39,68 @@ Calc function in CSS
 	1. Here first value we must keep in %
 	2. Second Value we can use in any mathematical units
 	3. we can use +,-,*,/ operators
+
+***************************************************************************************************************
+UNITS in CSS
+***************************************************************************************************************
+%----> percentage: dynamic unit
+in---> inch:  1in== 96 px== 2.54 cm
+px---> pixels(static): 1px= 1/96  th of '1 in'
+pt---> 1pt: 1/72 of '1 in'
+pc---> picas: 1pc = 12 pt
+
+
+Relative Lengths:
+---------------------
+
+1. em--> relative unit to the font-size of an element
+	(if the default value font-size of an element is 16px then 2em=32px)
+
+2. rem--> relative to its root element(borwsers default value)
+
+3. vw---> relative to 1% of the width of viewport.
+
+4. vh---> relative to 1% of the height of viewport.
+
+
+***************************************************************************************************************
+MARGINS
+***************************************************************************************************************
+
+Advance Margins:
+-------------------
+
+1. CSS Margin Collapse:
+---------------------------
+ top and bottom margins are combined into single margin equals to the largest individual block margin.
+
+.block-one{
+
+	margin: 20px;
+}
+
+.block-two{
+	margin: 30px
+}
+
+conclusion:
+block 1 has margin -bottom 20px, and block 2 has margin -top 30px means it should  give the margin of 50px but because of the collaps we will get 30px in between
+
+
+2. auto keyword in margin:
+-------------------------------
+- auto with margin property we can align elements in its container in a center
+- margin property take the width of an element and will split the space  equally between left and right margins
+
+
+3. Overflow:
+-------------------------------
+- basically when the content is larger then the container then use overflow to include scrollbar in your element
+
+- auto: if it requires scrollbar then include
+- scroll: element must shoe the scrollbar either it requires or not
+- hidden: it will hide the overflow of the content.
+
+
+4. visibility
+-------------------------------
