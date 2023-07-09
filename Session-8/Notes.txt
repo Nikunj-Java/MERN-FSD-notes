@@ -30,3 +30,12 @@ if you want to change this we can use psuedo classes
 	a:hover{
 			*/YOUR CSS HERE/*
 	}
+
+***************************************************************************************************************
+Calc function in CSS
+***************************************************************************************************************
+-allows us to apply some math operators on length values
+-syntax: calc(100%-45px)
+	1. Here first value we must keep in %
+	2. Second Value we can use in any mathematical units
+	3. we can use +,-,*,/ operators
