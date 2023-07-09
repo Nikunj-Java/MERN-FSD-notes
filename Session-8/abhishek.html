@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .personal {
+            align-items: center;
+            border: color #a15769;
+            border-radius: 8px;
+            padding: 5px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 32px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        .biodata {
+            color: white;
+            font-size: 30px;
+            font-style: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 5px;
+            padding-left: 32px;
+            margin-left: 175px;
+        }
+
+        .biodatacreat {
+
+            background-color: white;
+            color: black;
+            padding: 80px;
+            padding-top: 30px;
+            border-radius: 8px;
+            margin-left: 200px;
+            margin-right: 200px;
+
+
+
+        }
+
+        .select {
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+            flex: 0 50%;
+            margin-top: 15px;
+            margin-bottom: 0px;
+            padding: 10px 16px;
+            width: calc(100% + 30px);
+           
+            /* width: 100%;*/
+
+        }
+
+        .meditory {
+
+            margin-top: 8px;
+            font-size: 14px;
+            font-family: Lato, sans-serif;
+
+        }
+
+
+        .field {
+            background-color: white;
+            padding: 70px;
+            border-radius: 8px;
+            margin-left: 200px;
+            margin-right: 200px;
+
+        }
+
+        .bio-label {
+            font-size: 22px;
+             
+            padding: 10px;
+            font-weight: 400;
+            
+
+        }
+
+        .bio-name {
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+            flex: 0 50%;
+            margin-bottom: 0;
+            padding: 10px 16px;
+            width: 100%;
+        }
+
+        .gender {
+            font-size: 22px;
+
+            padding: 10px;
+            font-weight: 400;
+
+        }
+
+        .gender-select {
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+            flex: 0 50%;
+            margin-top: 15px;
+            margin-bottom: 0px;
+            padding: 10px 16px;
+            width: calc(100% + 30px);
+           
+            /* width: 100%;*/
+            
+        }
+
+        .dob {
+            font-size: 22px;
+             
+            padding: 10px;
+            font-weight: 400;
+
+
+        }
+
+        .bio-date {
+            border: 1px solid #e2e2e2;
+            border-radius: 8px;
+            margin-top: 15px;
+            margin-bottom: 0px;
+            padding: 10px 16px;
+            width: 100%;
+        }
+
+        .dob {
+            margin-top: 20px;
+            font-size: 22px;
+            padding: 10px;
+            font-weight: 400;
+            width: 100%;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body style="background-color: #3d1c3a;">
+    <h1 class="biodata">Start Building Biodata</h1>
+    <div class="biodatacreat"> Bio Data Created by*
+        <div class="meditory" style="color: red;"> *This won't show in the generated biodata</div>
+        <select class="select">
+            <option value="Select">Select One...</option>
+            <option value="Self">Self</option>
+            <option value="parents">Parents</option>
+            <option value="siblings">Siblings</option>
+            <option value="reletiv">Reletiv/feiends</option>
+
+        </select>
+    </div>
+
+    <div class="personal"
+        style="background-color: #a15769; color: white; font-family: 'Times New Roman', Times, serif; font-size: 20px;">
+        <b>Personal Details</b>
+    </div>
+
+    <div class="field">
+
+        <label for="name" class="bio-label">Name</label>
+        <input type="text" class="bio-name" id="name" maxlength="256" placeholder="Type Your Name"><br>
+
+        <label for="gender" class="gender">Gender</label>
+        <select class="gender-select">
+            <option value="Select">Select One...</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label for="dob" class="dob">Date Of Birth</label>
+        <input type="date" class="bio-date"><br>
+
+        <label for="Times" class="dob">Birth Time</label>
+        <input type="time" class="dob time">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
