@@ -104,3 +104,8 @@ block 1 has margin -bottom 20px, and block 2 has margin -top 30px means it shoul
 
 4. visibility
 -------------------------------
+- hide the element within the broweser using visibility.
+- visibility: hidden (hide element in the browser but consume space)
+- display:none (totally remove element from browser DOM)
+
+***************************************************************************************************************
