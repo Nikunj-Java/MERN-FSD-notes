@@ -5,3 +5,28 @@ Pseudo classes in CSS
 ----------------------
 
 - Used to define a special state of an element
+
+***************************************************************************************************************
+Default Links
+***************************************************************************************************************
+
+link: blue color
+visited links: purple color
+active link: red color
+
+if you want to change this we can use psuedo classes
+
+	a:link {
+			*/YOUR CSS HERE/*
+	}
+
+	a:visited{
+			*/YOUR CSS HERE/*
+	}
+	a:active{
+			*/YOUR CSS HERE/*
+	}
+
+	a:hover{
+			*/YOUR CSS HERE/*
+	}
