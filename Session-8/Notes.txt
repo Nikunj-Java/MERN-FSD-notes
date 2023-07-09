@@ -109,3 +109,31 @@ block 1 has margin -bottom 20px, and block 2 has margin -top 30px means it shoul
 - display:none (totally remove element from browser DOM)
 
 ***************************************************************************************************************
+CSS MEDIA QUERY
+***************************************************************************************************************
+- used to create responsive webpages
+- used to show different output on different screensizes(viewport)
+- we can set media query for different screen sizes and for  different media types
+- media types: all, print, screen,tv,speech
+- different screen sizes(mobile,tablet,laptops,desktops)
+
+***************************************************************************************************************
+CSS Reset
+***************************************************************************************************************
+- reset your CSS of all your HTML elements to its consistent baseline.
+- all default browser values can be applied to all html elements called CSS Reset.
+
+
+reset paragraph
+----------------
+	p{
+		margin:0;
+		padding:0;
+		fontsize:100%
+		line-height:1;
+
+	}
+----------------
+#test {
+	all:initial;
+}
