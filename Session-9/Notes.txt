@@ -1,0 +1,143 @@
+***************************************************************************************************************
+JAVASCRIPT
+***************************************************************************************************************
+- Its a Scripting Language.
+- its  do not required any Operating System to install
+- Any OS contains Browser that supports JavaScript.
+- JavaScript is called as Client Side Scripting.
+- Javascript Give Extra Features to the HTML Page where User can Do the Interaction with a page like
+  Form Validation,Call to Action, Adding Arithmatic Calculation Without using Server
+
+History:
+--------------
+- Brendan Eich who developed JavaScript, It was a language which was simply running on browser side
+
+How to work with JS?
+--------------------
+- we can write scripting code in <script></script> tag or we can create Separate file for that.
+- we can include that external file in our HTML file.
+- wenever HTML loads in a browser, JS file also loaded along with it
+- All browsers supports javascript
+----------------------------------
+
+How To Add JAVASCRIPT?
+-----------------------
+
+	1. Internal Javascript
+	-----------------------
+	<script>//you can write your code</script>
+	[Note: You can Add anywhere either in Head tag or in Body tag
+		but Standard Practice that we do is always we add in Body tag]
+
+
+	2. External JavaScript
+	----------------------
+	- create separate file and write script code. include the script in HTML file
+	- The Separate file must be saved with Extenstion .js and include that in your HTML using Below Syntax
+	- <script src="script.js" type="text/javascript" lang="javascript"></script>
+
+
+***************************************************************************************************************
+VARIABLES IN JAVASCRIPT
+***************************************************************************************************************
+
+- JavaScript is not a Strict language like java
+- Variable are used to store the values ( Temporary Storage )
+- Vlaue can be anything Name, number, address, some result etc...,
+
+so how to declare a variable?
+---------------------------------
+- use 'var' keyword to declare any data type
+Eg:
+	var name;
+	var num1,num2;
+	var address;
+	var phone;
+
+How to give Values to the variable?
+-----------------------------------
+
+	var name="Nikunj Soni";
+	var num1=20;
+	var address="Mumbai";
+	var phone="9876543210";
+[Note: text values must be declared with single qoute or double qoute]
+
+
+What is the Naming Convension of Variable?
+-------------------------------------------
+1. Give Meaningful name don't give name like a,b,c....
+2. variable name must start with letter and after that u can use digit or special characters
+	a1,b1,a2,b2 ------>Valid
+3. variable name can't start with  number
+	1a,1b,2a,2b ------> Not Valid
+4. Varibale are case Sensitive means if you will wirte Name & name are different variable not the same.
+
+How to Print Value in Browser?
+------------------------------------------
+syntax:
+	document.write(value);
+
+How to print Value in Console?
+------------------------------------------
+	console.log(value)
+
+
+***************************************************************************************************************
+Operators in JavaScript
+***************************************************************************************************************
+
+1. ARITHMATIC OPERATORS:
+--------------------------
+	+(addition)
+	-(subtraction)
+	*(multiplication)
+	/(division)
+	%(modulus)--->return u the reminder    5/3==>Remainder=2
+
+2. ASSIGNMENT OPERATORS:
+---------------------------
+
+	assignment is the operator used to assign a value
+	= operator is used to assign a value
+	Eg:
+
+	a=10;  //10 value stored in a
+	b=a //value stored in b from a
+
+	res= num1+num2; //means it will store the resultant value in res variable
+
+
+	___________________________________________
+	Example:1
+	
+	var result;   // variable declaration
+	result=67;   // assigning a value to the declared variable
+
+	var result=67;   // Combination of Declaration + Assignment
+
+We need to understand some sorthand assignement operator
+---------------------------------------------------------
+
+	num = num + 3; =====> num +=3;
+	num = num * 5; =====> num *=5;
+	num1 = num1 /num2 ===> num1/=num2
+
+
+3. COMPARISON OPERATORS:(Relational Operator)
+--------------------------------------------------------
+	==  (check where the numbers or the values are same or not)
+	!=  (not equal)
+	<   (less than)
+	<=  (less than equlas)
+	>   (greater than)
+	>=  (greater than equals)
+	=== (compare the value with its type)
+	!== (not equal with value type)
+	?:  (ternary operator)
+	
+
+4. LOGICAL OPERATORS:
+
+5. INCREMENTAL AND DECREMENTAL OPRATORS
+
