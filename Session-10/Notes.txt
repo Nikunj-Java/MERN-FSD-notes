@@ -1,0 +1,66 @@
+***************************************************************************************************************
+Condition
+***************************************************************************************************************
+1. if statement
+-------------------------
+- it check the condition  and if the condition is true then only it executes the statement block
+- syntax:
+	if(condition){
+
+		//statements
+	}
+
+
+2. if else statement
+------------------------
+-syntax: 
+
+	if(condition){
+
+		//statements
+	}
+	else{
+		//statements
+	}
+
+
+3. else if ladder
+--------------------
+
+-syntax:
+	if(condition1){
+
+		//statements
+	}
+	else if(condition2){
+
+		//statements
+	}
+	else if(condition3){
+
+		//statements
+	}
+	else if(condition4){
+
+		//statements
+	}
+	else{
+		//statements
+	}
+
+4. Switch Case
+---------------------
+
+- switch(value)
+	case:1
+		break;
+	case:2
+		break;
+	case:3
+		break;
+	default: //statements
+
+
+5. Nested if
+
+

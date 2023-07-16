@@ -135,9 +135,37 @@ We need to understand some sorthand assignement operator
 	=== (compare the value with its type)
 	!== (not equal with value type)
 	?:  (ternary operator)
-	
 
+
+
+Session:10	
+-----------
 4. LOGICAL OPERATORS:
+----------------------------------------------
+a. AND OPERATOR
+	- Combine Multiple Conditions we use Logical operator
+	- Email and Password Login:
+	- && -- (AND Operator)
+	- Syntax:(condition1) && (condition2)
+	- Note: in above syntax overall condition becomes true when condition1 and condition2 will be true
+b. OR OPERATOR
+	- It will check for any one condition to be true
+	- || ---(OR OPERATOR)
+	- Syntax: (condition1) || (condition2)
+	- Note: in above syntax overall condition becomes true when any of the condition1 or condition2 will be true
+c. NOT OPERATOR
+	- make the true condition as false and false as true
+	- Syntax: !(NOT)
+	- TRUE---->FALSE, FALSE---->TRUE
 
-5. INCREMENTAL AND DECREMENTAL OPRATORS
+5. INCREMENTAL AND DECREMENTAL OPERATORS
+-----------------------------------------
 
+- increase the value by 1 and decreases the value by 1.
+-  Increamenal syntax: num++;  ===> num=num+1;
+-  Decremental syntax: num--;  ===> num=num-1;
+
+
+
+
+ 
