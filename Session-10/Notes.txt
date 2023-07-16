@@ -49,7 +49,7 @@ Condition
 	}
 
 4. Switch Case
----------------------
+-----------------------------
 
 - switch(value)
 	case:1
@@ -62,5 +62,34 @@ Condition
 
 
 5. Nested if
+----------------------------
+if inside if is called nested if
+
+-syntax:
+		if(condition1){
+			
+			if(condition1){
+			
+			}
+		}
+	
+
+-SOMETIME YOU NEDD TO CHECK MULTIPLE CONDITIONS IN A SAME IF ONLY
+-	LIKE 
+	if(email && Password){
+		if(mobile && otp){
+	
+			}
+	}
+	else{
+		//statements
+	}
+
+- 	ALEXA PROGRAM:
+	if(main door is opened){
+		if(bed room door open){
+	
+			}
+	}
 
 
