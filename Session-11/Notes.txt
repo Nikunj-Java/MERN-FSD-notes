@@ -1,0 +1,40 @@
+***************************************************************************************************************
+SCOPE
+***************************************************************************************************************- as Javascript is not a strict language, we can declare anything with 'var','let','const' keyword
+	1. 'var'----> Global Declaration
+	2. 'let'----> numbers
+	3. 'const'--> constant values which never changes
+- all these three will work as it is, but their scope is different.
+- let and const keyword having block scope { }, menas you can access  within the block only where it is declared
+- eg:
+	{
+		let y=20;
+		const z=10;
+		
+		//this is accessible here only
+	
+	}
+	
+	can't use 'y' and 'z' here.
+
+***************************************************************************************************************
+LOOPS: Iterative Statements.
+
+- If you want to execute same thing multiple times better we should use loop.
+- There are three type of loops available
+	1. WHILE LOOP
+	2. DO WHILE LOOP
+	3. FOR LOOP
+
+1. WHILE LOOP:
+----------------------------
+
+syntax: 
+
+while(condition){
+
+	//statements
+
+}
+
+check the condition, if the condition is true, it will execute the block statement
