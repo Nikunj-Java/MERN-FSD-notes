@@ -37,4 +37,19 @@ while(condition){
 
 }
 
-check the condition, if the condition is true, it will execute the block statement
+- check the condition, if the condition is true, it will execute the block statement
+- while loop is checking the condition at the first, if the condition true the only  it proceeds otherwise it is terminated. as a result it is also known as 'Entry Control Loop'
+
+2. DO WHILE LOOP:
+------------------------------
+
+syntax:
+
+do{
+
+	//statements
+
+}while(condition)
+
+- it will execute do statement first then check the condition. so if  the condition true then again  it will continue with do.
+- here , the loop will execute atleast one time whether the condition is true or false, thats why these loops rae called as 'Exit control loop'.
