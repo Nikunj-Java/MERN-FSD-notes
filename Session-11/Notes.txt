@@ -53,3 +53,80 @@ do{
 
 - it will execute do statement first then check the condition. so if  the condition true then again  it will continue with do.
 - here , the loop will execute atleast one time whether the condition is true or false, thats why these loops rae called as 'Exit control loop'.
+
+***************************************************************************************************************
+TASK:
+***************************************************************************************************************
+
+1. WAP to print your names 5 times with number
+
+	o/p: 
+	1: Nikunj Soni
+	2: Nikunj Soni
+	3: Nikunj Soni
+	4: Nikunj Soni
+	5: Nikunj Soni
+
+
+2. WAP to print first 50 natuaral numbers in browser as well as in console.
+
+	o/p:
+		
+1
+2
+3
+.
+.
+.
+.
+.
+50
+
+
+3.  WAP to print first 50 odd numbers
+	o/p
+
+1
+3
+5
+7
+
+.
+.
+.
+.
+.
+99
+
+4. WAP to print first 50 even numbers
+
+o/p
+
+2
+4
+6
+8
+.
+.
+.
+.
+.
+100
+
+
+3. FOR LOOP
+--------------------------------------
+- POPULAR LOOP while working with some arrays
+- this accepts three parameters separated by semicolon
+	1. para1: initialization (Execute Once)
+	2. para2: condition      (Execute repeatatively)
+	3. para3: increament/decreament (Execute repeatatively)
+- syntax:
+
+	for(let i=1; i<=10;i++){
+	
+		//statements
+	
+	}
+
+- all this para executes everytime? no .first initialization execute only, once when the loop starts. where condition and increment will execute evrytime
