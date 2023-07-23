@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrow Function</h1>
+
+    <script>
+        //syntax: ()=>
+        //normal function
+        let print=()=> document.write("Welcome to Arrow  Function<br>");
+        print();
+
+        //parametrised function
+        let add=(a,b)=>a+b;
+        document.write("Arrow Function Add: "+add(3,5)+"<br>");
+
+        //iife with arrow function
+        (()=>document.write("IIFE WITH ARROW FUNCTION"))();
+    </script>
+    
+</body>
+</html>

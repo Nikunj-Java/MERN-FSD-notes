@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple Function Example</h1>
+
+    <script>
+        //01. simple function
+        function display(){
+            document.write("Display Function Called <br>");
+
+        }
+
+        //calling a function
+        display();
+
+
+        //02. parametrised function
+        function add(a,b){
+
+            var num1=a+b;//10+2=12
+            var num2=a*b;//10*2=20
+
+            return num1+num2; //12+20=32
+            
+        }
+
+        //calling a function
+        var result=add(10,2);
+
+        document.write("Result is: "+result+"<br>");
+
+        //03 Function Returning Function
+
+        function multiply(a,b){
+
+            var result=a*b;
+
+            return function(){ document.write("Funct.Returning Funct. Result is: "+result+"<br>")};
+        }
+
+        var funct=multiply(4,5);
+        funct();
+
+        //04 callback function
+        function greetings(name){
+            document.write("Welcome ! "+name);
+        }
+
+        function fullname(fname,lname,callback){
+            fullname=fname+" "+lname;
+            document.write("Fullname: "+fullname+"<br>");
+            callback(fullname); //callback function
+        }
+
+        //passing greeting function as callback variable
+        //this is known as argument or  Callback function
+        fullname("Nikunj","Soni",greetings);
+
+        //05 IIFE Function
+
+        (function(){document.write("Welcome to IIFE")})();
+
+
+        
+        
+
+        
+    </script>
+
+    
+</body>
+</html>

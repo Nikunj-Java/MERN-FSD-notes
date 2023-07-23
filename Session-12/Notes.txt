@@ -1,0 +1,89 @@
+***************************************************************************************************************
+FUNCTION
+***************************************************************************************************************
+
+- a javascript Function is a block of code designed to perform a particular task
+- function in javascript is defined by keyword 'function' followed by name, followed by parentheses()
+
+- syntax:
+	function demo(){
+		
+		//set of statements
+	
+	}
+- a function can be called using its name and parantheses and semicolon
+- syntax:
+	demo();
+- there are six types of function
+	1. Simple function
+	2. Parametrised function
+	3. Function Returning Function
+	4. CallbackFunction
+	5. IIFE(Immidiately Invoked Function Expression)
+	6. Arrow Function
+
+1.Simple Function:
+-----------------------
+
+- a normal function where all set of code is to be executed when called is known as Simple function
+- eg:
+	function demo(){
+		
+		console.log("I am Simple Function");
+	
+	}
+2. Parametrised function:
+-------------------------
+
+- in parametrised function there must be some parameteres to be passed through the parentheses and must have some return type
+- this value must be store in some variable to use it further
+- eg:
+
+		function add(a,b){
+
+             	  return a+b; 
+            
+        	}
+
+        //calling a function and stoing the value in result
+        var result=add(10,2);
+
+        document.write("Result is: "+result);
+
+3. Function Returning Function:
+-----------------------------------
+
+- when one function in return calls another function it is known as function returning function 
+- syntax:
+	function one(){
+
+		return function two(){ };
+	}
+
+4. Callback function:
+------------------------------------
+- when one function is passed  as a parameter in another function then it is known as callback function
+- syntax:
+
+	function one(){
+	
+	}
+
+	function two(a,b,one){
+		// here function one is passed as a parameter that is why
+		// it is known as callback function
+	}
+
+5. IIFE(Immidiately Invoked Function Expression):
+---------------------------------------------------
+- it is a type to represent function in a different way
+- it is used to achieve data privacy.
+- syntax (function(){ })();
+
+
+6. Arrow Function:
+----------------------------------------------------
+- it a way to represent a function using an arrow
+- syntax:
+	()=> document.write("Welcome to Arrow Function");
+

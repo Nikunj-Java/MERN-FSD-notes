@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>CallBack Function</h2>
+    <script>
+        //function
+        function greet(name, callback){
+            document.write("Hello..!! "+name+"<br>" );
+            callback();
+        }
+
+        //callback function
+        function callMe(){
+            document.write("I am CallBack Function <br>");
+
+        }
+
+        //passing function as an argument
+        greet("Nikunj Soni",callMe);
+
+    </script>
+    
+</body>
+</html>
