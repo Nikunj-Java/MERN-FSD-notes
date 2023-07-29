@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Pyramid Pattern</h1>
+
+
+    <script>
+
+        let row=5;
+        let pattern=""
+        for(let n=1;n<=row;n++){
+            //inner loop for the spaces
+            for(let space=1; space<= row-n; space++){
+                pattern += " ";
+            }
+
+            //Inner loop for Numbers
+            for(let num=1;num<= 2 * n - 1 ; num++){
+                pattern +=num;
+            }
+
+            pattern +="\n";
+        }
+
+        console.log(pattern);
+
+    </script>
+    
+</body>
+</html>
