@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Function Scope</h1>
+
+    <script>
+
+        function greetings(){
+            var name="Nikunj Soni";
+            //document.write("Name:"+name)
+            console.log("Name:"+name);
+
+            //block Scope
+            if(true){
+                let num=20; //block scope variable
+                console.log("Block Scope:"+num);
+                console.log("Name:"+name);
+
+            }
+            console.log("Block Scope:"+num); //This will give you an Error
+        }
+        greetings();
+        console.log("Name:"+name);
+        //document.write("Name:"+name)
+    </script>
+</body>
+</html>

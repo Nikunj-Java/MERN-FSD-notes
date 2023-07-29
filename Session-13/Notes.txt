@@ -19,3 +19,37 @@ Here in this pattern we have 5 rowas and 5 columns
 - So to prepare this kind of Pattern We need Two Loops
 - one for row and another for column
 
+
+***************************************************************************************************************SCOPE OF FUNCTION
+***************************************************************************************************************
+- There are three types of scope
+	A. Global Scope
+	B. Function Scope
+	C. Block Scope
+
+
+A. GLOBAL SCOPE
+-------------------------
+- YOU ARE DECLARING VARIABLES IN A SCRIPT DIRECTLY
+- HERE CAN USE let/const/var all consider as golbal Variables
+- But if you will declare variable using var keyword---> become window Object
+- if you declare global variable using let keyword-----> not becomes window Object
+- global variable removes from memory when you close that tab where page executed
+
+
+B. FUNCTION SCOPE
+--------------------------
+
+- Variable aredeclared inside the function, either you declare using let/const/var
+- not accessible outside the function
+- if you trying to access all of this outside the function, it will you an error.
+- when function is executed variable deleted from memory.
+
+
+C. BLOCK SCOPE
+---------------------------
+- accessible till its block {}
+- if you trying to access outside the block it can give you ref error
+- let and const variable removed from the memory once the block is executed
+- here var Name represents function scope and it can be access anywhere within the function()
+
