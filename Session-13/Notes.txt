@@ -1,0 +1,21 @@
+***************************************************************************************************************
+Nested Loop
+***************************************************************************************************************
+Loop Within A Loop is called Nested Loop
+
+Usually we are using loops while printing Patterns
+
+*
+**
+***
+****
+*****
+
+Here in this pattern we have 5 rowas and 5 columns
+
+- first row has only 1 column
+- second row has 2 column
+- third row has 3 column and so on....
+- So to prepare this kind of Pattern We need Two Loops
+- one for row and another for column
+
