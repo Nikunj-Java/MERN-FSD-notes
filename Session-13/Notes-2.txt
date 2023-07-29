@@ -1,0 +1,11 @@
+***************************************************************************************************************
+STRINGS:
+***************************************************************************************************************
+- whenever we want to store texual information we need strings
+- usually we write strings in double quote, single quote 
+- value of string is called as string literal
+- to attach the string in our console or document `` symbol and to print value we use ${ variable_name}
+
+eg:
+	let name1="Nikunj Soni";
+	let name2='Nikunj Soni';
