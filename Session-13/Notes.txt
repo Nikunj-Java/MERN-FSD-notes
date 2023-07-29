@@ -50,6 +50,6 @@ C. BLOCK SCOPE
 ---------------------------
 - accessible till its block {}
 - if you trying to access outside the block it can give you ref error
-- let and const variable removed from the memory once the block is executed
+- when block is executed variable deleted from memory.
 - here var Name represents function scope and it can be access anywhere within the function()
 
