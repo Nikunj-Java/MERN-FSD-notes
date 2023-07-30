@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let name = prompt("Enter Full Name");//Nikunj Soni
+
+        //remove extra space and breaks using " "
+        let names= name.trim().split(" ");
+
+        console.log(names);
+         //names is an array with 2 values
+         //names[0]== first name saved==Nikunj
+         //names[1]== last name saved==Soni
+
+        let result =names[0].charAt(0).toUpperCase()+names[0].slice(1)
+        +" "+names[1].charAt(0).toUpperCase();
+
+        console.log(result);
+
+
+
+    </script>
+    
+</body>
+</html>

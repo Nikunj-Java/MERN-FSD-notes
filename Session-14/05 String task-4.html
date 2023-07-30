@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        let input=prompt("Enter any word");
+
+        let newWord="";
+
+        for( let i=0; i<input.length;i++){
+            let char=input.charAt(i);
+            if(char== char.toLowerCase()){
+                newWord+=char.toUpperCase();
+            }
+            else{
+                newWord+=char.toLowerCase();
+            }
+
+        }
+
+        console.log("Input: "+input);
+        console.log("Converted: "+newWord);
+    </script>
+    
+</body>
+</html>

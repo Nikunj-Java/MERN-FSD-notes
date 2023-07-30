@@ -15,3 +15,36 @@ STRINGS: Methods
 2. SLICE: we can extract some part of your string.
 3. SUB STRING METHOD: you can extract the string using index position
 4. REPLACE: used to replace some content
+
+***************************************************************************************************************
+String: TASK
+***************************************************************************************************************
+1. ask user to enter an input using prompt.
+	- if user entered the string's length less than 5 then show alert message that the input must be minimum 5 character long
+	- if value is valid then display alert message with Welcome!  Username.
+
+Time: 5 minutes
+------------------------------------------------------------------------------------
+2. Ask user to enter fullname
+	show the name into abrevieted Form
+	EG: Nikunj Soni
+	------> Nikunj S
+	EG: Guarav Gaikwad
+	------> Gaurav G
+Time : 10 Minutes
+-------------------------------------------------------------------------------------
+
+3. convert my string into parametrised string
+
+	mYString="this is my javaScript code";
+	o/p: this-is-my-javaScript-code
+
+Time: 5 minutes
+
+-----------------------------------------------------------------------------------------------------
+4. Swapthe case of entered Values.
+
+	eg: pyTHon----->PYthON
+	eg: AbCdEf------>aBcDeF
+Time : 10 Minutes
+-------------------------------------------------------------------------------------
