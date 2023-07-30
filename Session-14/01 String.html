@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let name="Nikunj Soni"; 
+        let nameObj= new String(name); //String Object
+
+        document.write(`check just values: ${name==nameObj} <br>`);// true
+        document.write(`check Objects: ${name===nameObj} <br>`);// false
+
+
+        let obj1= new String("Nikunj");
+        let obj2= new String("Nikunj");
+
+        document.write(`check just values: ${obj1==obj2} <br>`);
+        document.write(`check Objects: ${obj1===obj2} <br>`);
+
+
+
+    </script>
+    
+</body>
+</html>

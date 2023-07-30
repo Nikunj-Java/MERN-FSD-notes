@@ -1,0 +1,17 @@
+***************************************************************************************************************
+STRINGS: Objects
+***************************************************************************************************************
+String used as an Object
+
+ let name ="Your_name"; String Literal
+
+ let name_1=new String("Your_Name"); //String object
+
+
+***************************************************************************************************************
+STRINGS: Methods
+***************************************************************************************************************
+1. LENGTH: lets get the length of your string
+2. SLICE: we can extract some part of your string.
+3. SUB STRING METHOD: you can extract the string using index position
+4. REPLACE: used to replace some content

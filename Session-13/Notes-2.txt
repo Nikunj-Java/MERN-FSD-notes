@@ -9,3 +9,8 @@ STRINGS:
 eg:
 	let name1="Nikunj Soni";
 	let name2='Nikunj Soni';
+
+use Escpe Characters.
+single quote \',
+double \"
+slash \\ or \/
