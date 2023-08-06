@@ -1,51 +1,81 @@
-body{
-
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
-h1{
-    text-align: center;
-    margin-top: 25px;
-    color: royalblue;
-}
-
-form{
-    width: 300px;
+.container {
+    width: 400px;
     margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-label{
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    width: 100%;
+}
+
+label {
     display: block;
-    margin-top: 15px;
+    margin-top: 10px;
+    color: #555;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"]{
+input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
-    border: 1px solid chocolate;
-    border-radius: 4px;
-
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s ease-in-out;
 }
 
-
-input[type="submit"]{
-    align-items: center;
-    width: 108%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid royalblue;
-    background-color: yellowgreen;
-    border-radius: 4px;
-
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #66afe9;
+    outline: none;
 }
 
 .error {
     color: red;
-    font-size: 14px;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
 }
 
+.success {
+    color: green;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+/*This code is contibuted By NIKUNJ SONI */

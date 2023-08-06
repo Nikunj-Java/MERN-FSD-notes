@@ -6,6 +6,7 @@ HTML
 	a. username :
 	b. email    :
 	c. password :
+	d. mobile number validation:
 	d. submit button
 ------------------------------
 

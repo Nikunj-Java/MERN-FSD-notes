@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Validation</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Form Validation Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <h1>Registration Form</h1>
-
-     
+    <div class="container">
+        <h1>Registration Form</h1>
         <form id="registrationForm">
-            <!--Username Section-->
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" >
+            <input type="text" id="username" name="username" required>
+            <!--Error Message-->
+            <span class="error" id="usernameError"></span>
+            
+            
 
-                <!--Error Message-->
-                <span class="error" id="usernameError"></span>
+            <label for="phone">Mobile Number:</label>
+            <input type="text" id="phoneNo" name="phoneNo" required>
+            
+            <!--Phone Number Error Message-->
+            <span class="error" id="phoneNoError"></span>
 
-            <!--Email Section-->
+            <!--Success Message-->
+            <span class="success" id="phoneNoSuccess"></span>
+             
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" >
-                 <!--Error Message-->
-                 <span class="error" id="emailError"></span>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
 
-            <!--Password Section-->
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" >
-                 <!--Error Message-->
-                 <span class="error" id="passwordError"></span>
+            <input type="password" id="password" name="password" required>
+            <span class="error" id="passwordError"></span>
 
-            <input type="submit" value="Register">
+
+            
+
+            <button type="submit">Register</button>
         </form>
-     
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
+
+<!--/*This code is contibuted By NIKUNJ SONI */-->
