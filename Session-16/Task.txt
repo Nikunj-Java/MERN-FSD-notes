@@ -1,0 +1,36 @@
+
+HTML
+-----------------------------
+1. CREATE HTML FORM :
+
+	a. username :
+	b. email    :
+	c. password :
+	d. submit button
+------------------------------
+
+CSS:
+
+
+
+
+
+------------------------------
+
+javaScript:
+-----------
+
+	1. check the length of user is empty or not?
+		if it is empty. show the message in html ("Username Can't Be Empty")
+	2. check the length of email is empty or not?
+		if it is empty. show the message in html ("Email Can't Be Empty")
+	3. check the validation of email
+		[check: @,.,]
+		if not. show the message in html ("Enter Valid Email Id")
+
+	4. check the length of password is empty or not?
+		if it is empty. show the message in html ("Email Can't Be Empty")
+
+	5. password must be 8 character long
+		if not. show the message in html ("Password must be minimum 8 character long")
+
