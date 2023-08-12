@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let array1=[1,2,3,4,5,6,7,8,9];
+        let array2=[30,40,50];
+
+
+        //stringification of an Array
+        document.write(`join the array element  and convert into string
+         ${array1.join("-")}<br>`);
+
+         let newArray=array1.concat(array2);
+         document.write(`Concated Array ${newArray}<br>`);
+
+         document.write(`join the array element  and convert into string
+         ${newArray.join("-")}<br>`);
+
+
+         //sliceing array
+         let subArray= array1.slice(0,3);
+         document.write(`<br> Sliced Array : ${subArray}`);
+
+         //sorting an array
+         let sortArray=[23,10,3,56,34];
+         sortArray.sort();
+         document.write(`<br> Sorted Array: ${sortArray}`);
+
+
+    </script>
+    
+</body>
+</html>

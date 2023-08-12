@@ -18,3 +18,26 @@ SO WHAT IS THE SOLUTION ?
 	index:  0,1,2,3,4,5,6,7,8
 ---> arrays are index based : means first element is at 0th index
 	num[0]=1, num[1]=2, num[2]=3.........num[8]=9.
+
+
+Methods Of Array
+------------------
+THERE ARE FOUR METHODS FOR MANIPULATING ARRAY
+
+1. PUSH
+----------------
+	Synatx: push(a)
+	work: insert the element 'a' at last index
+2. POP
+----------------
+	Syntax: pop()
+	work: remove the element from last index
+3. UNSHIFT
+-----------------
+	Syntax: unshift(a)
+	work: insert the element 'a' at first index (0- index), and rest elemengts are shifted back
+
+4. SHIFT
+---------
+	Syntax: shift()
+	work: remove the element from front (0 index)
