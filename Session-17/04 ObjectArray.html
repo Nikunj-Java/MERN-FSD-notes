@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       
+        let users= [
+            {
+                id: 1,name: "Nikunj Soni",
+                username: "Nikunj Soni",
+                email: "nikunj@gmail.com",
+                phone: "1-770-736-8031 x56442",
+                address: {
+                    street: "Kulas Light",
+                    landmark: "Apt. 556",
+                    city: "Mumbai"
+                }
+                
+            },
+
+            {
+                id: 2,name: "Nikhil Panwar",
+                username: "Nikhil Panwar",
+                email: "np@gmail.com",
+                phone: "1-770-123-5643 x56442",
+                address: {
+                    street: "Panbai Nagar",
+                    landmark: "Cheeda Marg",
+                    city: "Mumbai"
+                }
+                
+            }
+            ,
+            {
+                id: 3,name: "Rohit Kumar",
+                username: "Rohit kumar",
+                email: "rk@gmail.com",
+                phone: "1-786-123-5643 x56223",
+                address: {
+                    street: "Bandra Sea Link",
+                    landmark: "Band Stand",
+                    city: "Mumbai"
+                }
+                
+            }
+             
+        ];
+
+        for( let x of users){
+            document.write(
+                `<b>ID:</b> ${x.id}, 
+                <b>Name:</b> ${x.name}, 
+                <b>User Name:</b> ${x.username},
+                <b>Email:</b> ${x.email},
+                <b>Phone:</b> ${x.phone},
+                <br>
+                <b>Address:</b> 
+                <b> Streat:</b> ${x.address.street},
+                <b>LandMark:</b>${x.address.landmark},
+                <b>City:</b> ${x.address.city} <br>
+                ------------------------------------
+
+                <br>
+                `
+            );
+        }
+
+
+        
+    </script>
+    
+</body>
+</html>

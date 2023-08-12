@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let myArray = new Array(10);
+        // new keyword used to create array object and 10 is the size of myArray
+
+        for(let i=0; i<myArray.length;i++){
+            myArray[i]=prompt("Enter Any Number");
+            //lopp will repeat 10 times and store values till index 9
+        }
+
+        //print array value
+
+        for(let p=0; p<myArray.length;p++){
+            //document.write(`<br> ${p+1} Number: ${myArray[p]}`);
+            document.write("<br> "+(p+1)+". "+myArray[p]);
+        }
+    </script>
+    
+</body>
+</html>
