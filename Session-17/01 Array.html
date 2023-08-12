@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        //array of numbers
+        let nums= [10,20,30,40,50,60,70,80,90];
+
+        console.log(nums); //this will print full array
+        console.log("Element at index - 0: "+nums[0]);
+        console.log("Element at index - 1: "+nums[1]);
+        console.log("Element at index - 2: "+nums[2]);
+        console.log("Element at index - 5: "+nums[5]);
+        console.log("Element at index - 8: "+nums[8]);
+
+
+        //array of string
+        let names=["Nikunj","Abhishek","Sakshi","Rishikesh","Pratik","Raj"];
+        console.log(names);
+        console.log("Value at index 3: ",names[3]);
+
+        //printing a value using for loop
+
+        document.write("<b>Printing The Values of Names Array: </b>")
+        for(let i=0 ;i<names.length;i++){
+               
+               // document.write(" "+names[i]);
+                document.write(`<br> ${i+1}  `+names[i]);
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

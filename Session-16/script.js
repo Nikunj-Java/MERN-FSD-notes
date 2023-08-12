@@ -11,6 +11,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     var emailError = document.getElementById("emailError");
     var passwordError = document.getElementById("passwordError");
     var phoneNoError = document.getElementById("phoneNoError");
+
     var phoneNoSuccess = document.getElementById("phoneNoSuccess");
 
      
@@ -19,6 +20,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     emailError.textContent = "";
     passwordError.textContent = "";
     phoneNoError.textContent = "";
+
     phoneNoSuccess.textContent = "";
 
     if (username.trim() === "") {
@@ -53,3 +55,5 @@ document.getElementById("registrationForm").addEventListener("submit", function(
         event.preventDefault(); // Prevent form submission if there are errors
     }
 });
+
+/*This code is contibuted By NIKUNJ SONI */

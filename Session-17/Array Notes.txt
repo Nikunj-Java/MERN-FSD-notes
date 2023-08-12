@@ -1,0 +1,20 @@
+***************************************************************************************************************
+ARRAY:
+***************************************************************************************************************
+
+- sequence of data called array.
+
+- consider when data from server or some another source is coming in bundle of numbers like 100+ data
+- so storing it in one by one is difficult.
+- LIKE:
+- let num1,num2,num3.....
+
+SO WHAT IS THE SOLUTION ?
+---------------------------
+
+---> IF YOU WANT TO STORE MORE THA  ONE VALUE  OF SAME DATA TYPE WITH ONE NAME WE CAN USE ARRAY
+
+---> let num = [1,2,3,4,5,6,7,8,9];
+	index:  0,1,2,3,4,5,6,7,8
+---> arrays are index based : means first element is at 0th index
+	num[0]=1, num[1]=2, num[2]=3.........num[8]=9.
