@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        const salary=15000;
+
+        //print Total Salary
+        const deductions=[1800,50,300,40,60,200]; //expenses
+
+       
+        ///Print Total Expenses
+
+        const res= deductions.reduce((acc,curr,index)=>{
+            return acc-curr
+        },salary)
+
+        //Print Total Savings
+        document.write(`Savings : ${res}`);
+
+
+        //Expense Tracker
+        // Total Salary: 150000/-
+        // Total Expenses: 3000/-
+        //-----------------------------
+        //Savings        :12000/-
+
+
+
+    </script>
+
+
+</body>
+</html>

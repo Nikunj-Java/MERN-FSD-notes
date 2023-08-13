@@ -1,0 +1,10 @@
+***************************************************************************************************************
+Array.reduce()
+***************************************************************************************************************
+
+For Sum:
+ 	syntax: const myresult=myArray.reduce((sum,value)=>sum+value);
+For Subtraction:
+	syntax:  const res= deductions.reduce((acc,curr,index)=>{
+            			return acc-curr
+        		    },salary)
