@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const array=[3,67,98,4,57,0,9];
+        //const array=[2,4,6,8,10,12];
+        //document.write("Original Array: "+array+"<br>");
+        document.write(`Original Array: ${array}<br>`);
+        
+        //check the condition strictly for every element in an array
+        const result=array.every((value)=> value%2==0)
+        document.write(`All Numbers Are even: ${result}<br>`);
+
+        //check the condition for some element in an array
+        const result1=array.some((value)=> value%2==0)
+        document.write(`Some Numbers Are even: ${result1}<br>`);
+    </script>
+    
+</body>
+</html>
