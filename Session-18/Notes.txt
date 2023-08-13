@@ -8,3 +8,9 @@ For Subtraction:
 	syntax:  const res= deductions.reduce((acc,curr,index)=>{
             			return acc-curr
         		    },salary)
+
+***************************************************************************************************************
+Array.map()
+***************************************************************************************************************
+
+map method will help u to itrate with your data and produces the new array from it

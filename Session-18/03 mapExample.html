@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const array=[1,2,3,4,5,6,7,8,9,10];
+
+        const resultArray=array.map((value)=>value*5);
+        //syntax: const myResultArray=array.map((value)=>{condition});
+
+        document.write(`Original Array:  ${array} <br>`);
+
+        document.write(`Resultant Array:  ${resultArray} <br>`);
+
+
+        resultArray.forEach((value,index)=>{
+            document.write(`${index} its value is: ${value}<br>`);
+        })
+    </script>
+</body>
+</html>
