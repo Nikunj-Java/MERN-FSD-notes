@@ -1,2 +1,4 @@
-write a program to create a simple button by clicking it load the data in <p> tag using javaScript.
-just load the simple welcome message="welcome to the world of javascript"
+01 write a program to create a simple button by clicking it load the data in <p> tag using javaScript.
+    just load the simple welcome message="welcome to the world of javascript"
+
+02 WAP to get firstname, middlename and lastname from input field and then show full name using alert box when user click on submit button
