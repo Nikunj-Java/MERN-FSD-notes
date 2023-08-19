@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Search</title>
+</head>
+<body>
+
+
+    <h1>Linear Search</h1>
+
+    <h2 style="color: red;">12,56,78,90,34,76,32,10</h2>
+
+    <script>
+       
+        const array=[12,56,78,90,34,76,32,10];
+
+        let found =false; //boolean data type
+
+        const temp=prompt("Enter number to Search");
+
+
+        for(let i=0;i<array.length;i++){
+             if(array[i]==temp) {
+                found=true;
+                document.write(`${temp} found at index ${i}`);
+                // print the index of array
+                break;
+             }
+        }
+        if(!found){
+             document.write(`${temp} Not found , Array out of index`);
+             // print array put of index
+        }
+
+    </script>
+
+    
+</body>
+</html>
