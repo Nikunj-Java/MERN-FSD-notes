@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search</title>
+</head>
+<body>
+
+    <h1>Binary Search</h1>
+
+    <!--Array Should be sorted-->
+    <h2>Array: [3,9,15,20,25,32,69,70,82]</h2>
+
+    <script>
+        const array=[3,9,15,20,25,32,69,70,82];
+
+        let left=0;
+        let right=array.length-1;
+
+        const user=prompt("Enter a Number That You Want to Search");
+
+        while(left<=right){
+            
+            let mid=Math.floor((left+right)/2);
+            if(array[mid]==user){
+                document.write(`${user} Found at index ${mid}`);
+                break;
+            }
+            else if(array[mid]>user){
+                right=mid-1;
+            }
+            else {
+                left=mid+1;
+            }
+
+        }
+        if(left>right){
+            document.write("Element Not Found");
+        }
+
+
+    </script>
+    
+</body>
+</html>
