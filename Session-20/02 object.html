@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+            const user = new Object();
+            user.firstName="Nikunj";
+            user.lastName="Soni";
+            user.email="nikunj@gmail.com"
+            user.login=1;
+
+            console.log(user);
+
+            const user2=user;
+
+            console.log(user2);
+
+
+            console.log(user===user2); //botha are poiting to the same memory
+
+            user2.login=0;
+            console.log(user);
+            
+
+
+
+
+
+    </script>
+
+</body>
+</html>
