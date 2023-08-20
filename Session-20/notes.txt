@@ -34,3 +34,24 @@ Syntax:
  -inside  the class  we are declaring member variable and member functions in class
  -this keyword is used to access the member of a class
  -to initialise the value we use constructor.
+
+ ------------------------------------------------------------------------------------
+ Inheritence
+ ------------------------------------------------------------------------------------
+ - class can access parent class functionality
+ - to access the functionality we use 'extends' keyword
+
+ syntax:
+  class x extends y 
+  {
+
+  }
+
+ - y is a parent class
+ - x is a child class
+
+- if you want to call parent class constructor from child class we use 'super()'
+  in child  class
+
+-  to call methods
+    use:  super.(method name);

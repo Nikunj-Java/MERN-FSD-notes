@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //parent class
+        class Account{
+
+            constructor(accNo,holderName,balance){
+                this.accNo=accNo;
+                this.holderName=holderName;
+                this.balance=balance;
+            }
+            print(){
+                console.log("Account No:"+this.accNo);
+                console.log("Account Holder Name:"+this.holderName);
+                console.log("Account Balance:"+this.balance);
+            }
+
+        }
+
+
+        //child class
+        //inheritence
+        class SavingAccount extends Account {
+
+            constructor(accNo,holderName,balance,roi){
+               super(accNo,holderName,balance);
+                this.roi=roi;
+            }
+            print(){
+                super.print();
+                console.log("Rate of Interest: "+this.roi);
+            }
+
+        }
+
+        let nikunjAccount= new SavingAccount("SB001234","NIKUNJ SONI",100000,9.5);
+
+        nikunjAccount.print();
+    </script>
+    
+</body>
+</html>
