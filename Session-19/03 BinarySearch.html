@@ -9,6 +9,11 @@
 
     <h1>Binary Search</h1>
 
+
+    <!--Create HTML and Tell User To Enter Numbers Separated by coma-->
+    <!--input: [3,5,7,8,9]-->
+    <!--create one button and Search the Element using Javascript-->
+
     <!--Array Should be sorted-->
     <h2>Array: [3,9,15,20,25,32,69,70,82]</h2>
 
@@ -21,7 +26,7 @@
         const user=prompt("Enter a Number That You Want to Search");
 
         while(left<=right){
-            
+
             let mid=Math.floor((left+right)/2);
             if(array[mid]==user){
                 document.write(`${user} Found at index ${mid}`);

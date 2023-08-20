@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPs</title>
+    
+</head>
+<body>
+
+    <h1>OOPS Concept In JavaScript</h1>
+
+    <h2>Class and Object Example</h2>
+
+    <input type="text" id="id" placeholder="Enter Your id">
+
+    <input type="text" id="name" placeholder="Enter Your Name">
+
+    <input type="text" id="email" placeholder="Enter Your Email">
+
+    <input type="text" id="password" placeholder="Enter Your Password">
+
+    <input type="text" id="login" placeholder="Enter Your login credentials">
+
+    <input type="submit" value="add" onclick="save()">
+
+    <div id="result"></div>
+
+    <script src="class.js"></script>
+    <script>
+
+        let array=[];
+        function save(){
+            // getting the values from HTML
+            let id= document.getElementById("id").value;
+            let name= document.getElementById("name").value;
+            let email= document.getElementById("email").value;
+            let password= document.getElementById("password").value;
+            let login= document.getElementById("login").value;
+
+            //save the values received from html to object of class
+
+            let obj= new Student(id,name,email,password,login);
+            array.push(obj);
+            display();
+           
+
+            //let's clear all html values once data is pushed to array
+             document.getElementById("id").value="";
+             document.getElementById("name").value="";
+             document.getElementById("email").value="";
+             document.getElementById("password").value="";
+             document.getElementById("login").value="";
+            // console.log(array);
+
+        
+        }
+
+        function display(){
+            html=`<table>
+                        <tr> 
+                            <th>ID</th> <th>NAME</th> <th>EMAIL</th> 
+                            <th>PASSWORD</th> <th>LOGIN</th>
+                        </tr>
+                        </table>`;
+           for (let x of array){
+                    html+=x.display();
+           }
+
+           document.getElementById("result").innerHTML=html;
+        }
+
+        
+
+
+    </script>
+    
+</body>
+</html>

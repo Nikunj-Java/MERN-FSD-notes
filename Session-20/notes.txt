@@ -1,0 +1,36 @@
+***********************************************************************************
+OOPS: Object Oriented Programming Structure
+***********************************************************************************
+- it is an approach to create program in a systematic manner.
+- focus on 'object' and create your codes.
+
+-----------------------------------------------------------------------------------
+Mian Pillars of OOPS
+-----------------------------------------------------------------------------------
+
+1. class
+2. object
+3. inheritence
+4. polymorphism
+5. abstraction
+6. encapsulation
+
+-----------------------------------------------------------------------------------
+1. CLASS
+-----------------------------------------------------------------------------------
+
+- it is a design / template / blue print of object from that we can create multiple objects as per our requirenments
+- so sometimes it is also known as collection of objects
+
+Syntax:
+
+ keyword: class
+
+ class name(){
+
+            //conditions
+ }
+
+ -inside  the class  we are declaring member variable and member functions in class
+ -this keyword is used to access the member of a class
+ -to initialise the value we use constructor.
