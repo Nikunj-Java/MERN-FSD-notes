@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Set Example</h2>
+
+    <script>
+         
+
+         
+
+        let obj= new Set();
+        obj.add(45);
+        obj.add(78);
+        obj.add(89);
+        obj.add("Test");
+        obj.add("Demo");
+        obj.add(99);
+        console.log(obj);
+        console.log("Size: "+obj.size);
+        console.log("Has 99? :"+obj.has(99));
+        //to print a set value
+        obj.forEach((value)=>{
+            console.log(value);
+        })
+        //delete method
+        console.log("Delete :"+obj.delete(89));
+        console.log(obj);
+        //to clear a set
+        obj.clear();
+        console.log(obj);
+        //there are many methods available with sets
+        //1. add()
+        //2. delete()
+        //3. has()
+        //4. clear()
+        //5. forEach()
+        //6. values()
+        //7. keys()
+        //8. entries()
+
+
+         
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //map contains key value pair
+
+        let map= new Map();
+        //map.set(key,value);
+        map.set(1,"alex");
+        map.set(2,"jhon");
+        map.set(3,"peter");
+        map.set(4,"nik");
+        map.set(5,"Harry");
+        map.set(6,"wei-meng");
+
+        //methods: .size,.has,.get,delete,clear
+
+        console.log(map);
+        console.log("Size: "+map.size);
+
+        //get keys
+        keys=map.keys();
+        console.log("Keys are: "+keys);
+
+
+        console.log("Has user 5 or not? :"+map.has(5));
+
+        console.log("Get the value of user 5: "+map.get(5));
+
+        console.log("Delete user 6: "+map.delete(6));
+        console.log(map);
+
+        map.clear();
+        console.log(map);
+
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

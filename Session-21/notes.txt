@@ -1,0 +1,15 @@
+************************************************************************************
+SET
+************************************************************************************
+
+- SET IS SIMPLY A COLLECTION OF VALUES BUT THEY ARE UNIQUE
+- IT WILL NOT ALLOW YOU TO ADD ANY DUPLICATE VALUE INSIDE THE SAME 
+
+
+SYNTAX: 
+
+    let obj= new Set();
+
+    obj.add(12);
+    obj.add(1);
+    obj.add(10);
