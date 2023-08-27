@@ -27,12 +27,14 @@
         }
         //to create dynamic index
         setKeys(key){
+            console.log("Key:"+key %10);
             return key %10;
 
         }
         //to insert the value at dynamic index
         insert(value){
             const index=this.setKeys(value);
+            
             this.table[index]=value;
             this.size++;
         }
@@ -62,6 +64,7 @@
             
 
         }
+        
 
 
     }
@@ -81,7 +84,8 @@
 
     hashT.delete(11);
     hashT.delete(100)
-   
+
+  
 
         
     </script>
