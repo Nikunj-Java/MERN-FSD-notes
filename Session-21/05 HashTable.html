@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>HashTable Example</h1>
+
+    <p> A Hashtable in Javascript is basically generalization of array. it is most commonly used for</p>
+    <p> searching those items inserted in an array</p>
+
+    <h5>To create Hastable We need to  create Methods like </h5>
+
+    <p>insert,get,serach,delete</p>
+
+   <script>
+
+    //Creating Hashtable Class
+    class HashTable {
+
+        constructor(){
+            this.table= new Array(10);
+            this.size=0;
+        }
+        //to create dynamic index
+        setKeys(key){
+            return key %10;
+
+        }
+        //to insert the value at dynamic index
+        insert(value){
+            const index=this.setKeys(value);
+            this.table[index]=value;
+            this.size++;
+        }
+        //to search value
+        search(value){
+            const index=this.setKeys(value);
+            if(this.table[index]==value)
+                    console.log("Value found at index: "+index);
+            else
+                    console.log("Value not found")
+
+        }
+
+        delete(value){
+            const index=this.setKeys(value);
+            if(this.table[index]==value){
+                if(this.table[index]){
+                    this.table[index]=[];
+                    this.size--;
+                    console.log("Value deleted from index: "+index);   
+                }
+                
+            }
+            else{
+                    console.log("Value not present")  
+                }
+            
+
+        }
+
+
+    }
+
+    const hashT= new HashTable();
+    hashT.insert(99);
+    hashT.insert(90);
+    hashT.insert(11);
+    hashT.insert(8);
+
+    console.log(hashT.table);
+
+    hashT.search(8);
+    hashT.search(90);
+    hashT.search(100);
+
+
+    hashT.delete(11);
+    hashT.delete(100)
+   
+
+        
+    </script>
+     
+
+    
+</body>
+</html>
