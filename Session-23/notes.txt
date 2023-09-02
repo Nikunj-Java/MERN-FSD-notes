@@ -1,0 +1,28 @@
+Exception Handling
+------------------------------------------------------------------------------------
+- writing a program in javascript can cuase Exception.
+
+1. Reference Error
+2. ToMany Recursions
+3. Invalid Array Length
+4. Missing Initializer
+5. String function can apply on string variables
+6. URL Malformed
+
+
+How to handle this error?
+-------------------------------------------------------------------------------------
+
+try and catch block
+
+
+try {
+     //code which can cretae execption 
+     // risky code
+}
+catch(error){
+    //write code fo handling the error
+}
+finally{
+    //finally block always executed either eoor occured or not
+}
