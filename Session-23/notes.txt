@@ -26,3 +26,27 @@ catch(error){
 finally{
     //finally block always executed either eoor occured or not
 }
+
+
+-----------------------------------------------------------------------------------
+Throw
+-----------------------------------------------------------------------------------
+Throw kyword to throws your own (custom exceptions)
+
+ to throw use error class and create object of the same to throw an error
+
+ throw new Error("Error Message);
+
+
+ Custom Exceptions
+ -------------------
+
+
+ class NotValidAge extends Error {
+
+    constructor(message){
+        super(message);
+    }
+ }
+
+ throw new NotValidAge("Not a Valid Data");

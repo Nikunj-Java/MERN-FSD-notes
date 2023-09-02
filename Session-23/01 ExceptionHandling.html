@@ -8,6 +8,11 @@
 <body>
 
     <h2>Exception Handling in JS</h2>
+    <p>Errors are of two types</p>
+    <ol>
+        <li>Compile Time Error</li>
+        <li>Run Time Error</li>
+    </ol>
 
     <script>
         //javascript code for exception handling
@@ -17,6 +22,8 @@
         try {
             //risky code
             console.log(decodeURI("%https://www.google.com/"));
+            //const count=89;
+            //console.log(count.toUpperCase());
         } catch (error) {
             console.log("Error Occured :",error);
         }

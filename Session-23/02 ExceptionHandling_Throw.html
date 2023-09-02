@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Exception Handling Using Throw</h2>
+   
+   <p> to  use throw use error class and create object of the same to throw an error</p> 
+
+   <p>to call exception: throw new Error("Error Message);</p>
+   <script>
+
+    //custom error
+    
+    class NotValidAge extends Error {
+
+        constructor(message){
+            super(message);
+        }
+    }
+    //function that can cause error
+    function check(age){
+        if(age>=18){
+            console.log("Valid for Vote");
+        }
+        else{
+            //throwing an Custom Exception 
+            throw new NotValidAge("Not valid input");
+        }
+    }
+ 
+    //let's take input from user
+    try {
+        let data= prompt("Enter Any Number");//user input :26
+        check(data);
+        
+    } catch (error) {
+        console.log("There is some error Occured due to: ",error)
+    }
+    
+
+   </script>
+    
+</body>
+</html>
