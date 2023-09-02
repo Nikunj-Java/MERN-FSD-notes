@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     
+</head>
+<body>
+
+
+    <h1>Query Selector</h1>
+
+    <div>
+        <h1> This is my Heading</h1>
+        
+        <button onclick="callme()">Change Text</button>
+
+        <ul class="list">
+            <li>Demo 1</li>
+            <li>Demo 2</li>
+            <li>Demo 3</li>
+            <li>Demo 4</li>
+            <li>Demo 5</li>
+        </ul>
+    <h1 id="test" >Another Heading</h1>
+    </div>
+
+
+    <script>
+
+        let ele_1= document.querySelector("h1"); //select the first match
+        ele_1.style.color='white';
+        ele_1.style.backgroundColor='chocolate';
+
+
+        let list=document.querySelector(".list")// . scan the class in HTML document
+    
+        list.style.color="lightseagreen";
+
+        function callme(){
+            alert("Called");
+
+            let ele_2=document.querySelector("#test") //# used for id it will select the first match
+            
+            ele_2.innerHTML="Welcome to the Query Selector Demo";
+
+            ele_2.style.color="red";
+
+        }
+    </script>
+
+
+    
+</body>
+</html>
