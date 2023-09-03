@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     
+</head>
+<body>
+
+
+    <h1>Query Selector</h1>
+
+    <div>
+        <h1> This is my Heading</h1>
+        
+        <button onclick="callme()">Change Text</button>
+
+        <ul class="list">
+            <li>Demo 1</li>
+            <li>Demo 2</li>
+            <li>Demo 3</li>
+            <li>Demo 4</li>
+            <li>Demo 5</li>
+            <li>Demo 6</li>
+            <li>Demo 7</li>
+        </ul>
+    <h1 id="test" >Another Heading</h1>
+    </div>
+
+
+    <script>
+
+        let array=["Sakshi","Raj","Abhishek","Nikunj","Guarav","Anjali","Tazeen"];
+
+        let ele=document.querySelectorAll("li");
+
+        console.log(ele);
+
+        for(let i=0;i<ele.length;i++){
+            ele[i].innerHTML=array[i];
+        }
+       
+         
+    </script>
+
+
+    
+</body>
+</html>

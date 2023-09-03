@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding and Removing CSS</title>
+
+    <style>
+        .myStyle{
+            width: 50%;
+            padding: 25px;
+            background-color: coral;
+            color: white;
+            font-size: 35px;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        button{
+            padding: 5px 15px;
+            width: 25%;
+            padding: 25px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Add and Remove CSS Using JavaScript</h1>
+
+    <div id="myDIV" class="myStyle">
+        This is MY DIV Where we will Add or Remove CSS by Using Button Click by Js
+    </div>
+
+    <button onclick="add()">Add CSS</button>
+    <button onclick="remove()">Remove CSS</button>
+
+    <script>
+
+        function add(){
+            var element=document.getElementById("myDIV");
+            element.classList.add("myStyle");
+        }
+
+        function remove(){
+            var element=document.getElementById("myDIV");
+            element.classList.remove("myStyle");
+        }
+
+    </script>
+    
+</body>
+</html>
