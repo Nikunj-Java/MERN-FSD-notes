@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Destructuring Arrays and Object</h1>
+
+
+    <script>
+        function calculate(a,b){
+            const add=a+b;
+            const sub=a-b;
+            const multiply=a*b;
+            const divide=a/b;
+
+            return [add,sub,multiply,divide];
+        }
+
+        const[add,sub,multiply,divide]=calculate(20,2);
+
+        document.write("<p><b>Sum:</b>"+add+"</p>");
+        document.write("<p><b>Difference:</b>"+sub+"</p>");
+        document.write("<p><b>Product:</b>"+multiply+"</p>");
+        document.write("<p><b>Quetient:</b>"+divide+"</p>");
+
+    </script>
+    
+</body>
+</html>
