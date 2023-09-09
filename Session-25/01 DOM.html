@@ -18,14 +18,34 @@
 
         <div class="comp2">
             Some data 2
-         </div>
+        </div>
         
     </div>
 
     <script>
+        //to read title
+        console.log(document.title);
 
+        // to read paragraph in parent class
         const para=document.getElementById("test").innerHTML;
         console.log(para);
+
+        let ele=document.querySelector(".container");
+        console.log(ele);
+
+        let nodes=ele.children;
+
+        console.log(nodes);
+
+        //Array.from(nodes).forEach((myel)=>{
+                //console.log(myel);
+        //})
+
+        const array= Array.from(nodes);
+
+        array.forEach((myel)=>{
+            console.log(myel);
+        })
 
 
     </script>
