@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2> JS HTML DOM ELEMENTS</h2>
+
+    <h3> Operations REMOVE Element/ Remove CHILD/Replace HTML</h3>
+
+
+    <div id="parent">
+        <p id="p1">This is a Para-1</p>
+        <p id="p2">This is a Para-2</p>
+    </div>
+
+    <button onclick="RemoveElement()">Remove Element</button>
+
+    <button onclick="RemoveChild()">Remove Child</button>
+
+    <button onclick="ReplaceHTML()">Replace HTML</button>
+
+    <script>
+
+        function RemoveElement(){
+            document.getElementById("p1").remove();
+        }
+
+        function RemoveChild(){
+            const parent=document.getElementById("parent");
+            const child=document.getElementById("p2");
+            parent.removeChild(child);
+        }
+
+        function ReplaceHTML(){
+            
+            //get the value to be replaced
+            const myparent=document.getElementById("parent");
+            const mychild=document.getElementById("p1");
+
+            //creating new paragraph using js
+            const child1= document.createElement("p");
+            const node=document.createTextNode("This is New Text From JS");
+            child1.appendChild(node);
+
+            //action
+            myparent.replaceChild(child1,mychild);
+
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
