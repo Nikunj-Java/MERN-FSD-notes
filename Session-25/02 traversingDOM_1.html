@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul class="list">
+        <li><a href="#">LINK 1</a></li>
+        <li><a href="#">LINK 2</a></li>
+        <li><a href="#">LINK 3</a></li>
+        <li><a href="#">LINK 4</a></li>
+    </ul>
+
+    <script>
+        const firstList=document.querySelector('li');
+        console.log(firstList);
+
+        const list=firstList.parentElement
+        //parent element helps to select parent tag
+
+        //closest you can select the closess ancestor element which matches with your selector
+
+        const firstLink=document.querySelector('a'); //takes the first link only
+        const list1=firstLink.closest(".list");
+
+        console.log(firstLink);
+
+        console.log(list1);
+    </script>
+    
+</body>
+</html>
