@@ -4,21 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .mytable {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: 0.1cm solid gray;
+        }
+         
+         
+
+        h1 {
+            font-size: 24px;
+            margin: auto;
+            width: 50%;
+             
+        }
+
+ 
+
+    </style>
 </head>
 <body>
 
-    <h1>API USING AJAX</h1>
+    
 
     <p class="user"></p>
     <p class="details"></p>
 
-    <table border="1">
+    <table class="mytable" >
+        <h1>API USING AJAX</h1>
         <thead>
             <tr>
                 <th>Id</th><th>UserId</th><th>Title</th><th>Completed</th>
             </tr>
         </thead>
-        <tbody class="mydata"></tbody>
+        <tbody class="mydata" style="background-color:lightblue;"></tbody>
     </table>
 
 

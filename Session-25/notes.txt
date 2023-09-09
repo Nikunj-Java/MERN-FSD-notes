@@ -1,0 +1,50 @@
+DOM
+*******************************************************************************************
+Document Object Model
+
+Using  JS programming we  can add ,update or we can remove the  element from the document (Webpage in a browser)
+
+
+*****HOW IT LOOKS*****
+
+
+<html>
+
+    <head>
+        <title>THIS IS MY TITLE</title>
+    </head>
+
+    <body>
+            <div>
+                <h1>This is My Heading 1</h1>
+                <p>Somthing Here....</p>
+            </div>
+
+            <div>
+                <h1>This is My Heading 2</h1>
+                <p>Somthing Here....</p>
+            </div>
+
+            <div>
+                <h1>This is My Heading3 </h1>
+                <p>Somthing Here....</p>
+            </div>
+    </body>
+
+</html>
+
+
+to read the element from this DOM we can use different methods
+
+document.getElementById();
+document.Selector;
+document.querySelector();
+
+
+let's Traverse , so that we we can read the content line by line
+
+1. Downwards: Parent -----> Child 
+
+2. Upwards: parentElement, closest();
+
+3. sidewards: nextSiblingElement,previousnextSiblingElement
