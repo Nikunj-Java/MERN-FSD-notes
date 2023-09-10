@@ -3,42 +3,67 @@ Module Project - JS/DOM : Restaurant Reservation System
 Project description : Your task is to build a complete restaurant reservation system. The goal of this project is to apply your knowledge of JavaScript and JavaScript-DOM.
 
 Total assignment marks : 100 
+----------------------------------
 
 Deliverables [Total marks : 95] :
 
 Home Page : [10 marks]
+----------------------------
+
 Should include a navbar.
 Create a section that describes the restaurant.
 Create a section that displays the restaurant's unique selling points, like images of dishes, special ingredients, or happy customers.
+
 Menu Page : [10 marks]
+-----------------------------
 Displays different dishes offered by the restaurant, by creating cards for the dishes including dish image, name & description.
 Dishes should be split into various categories based on their type. (Appetisers, Main course, desserts etc)
+
 Reservations Page : [10 marks]
+------------------------------
 Allows users to choose their desired date & time for their reservation.
 Create a feature to check availability and confirm reservations.
 Store user reservations & display them on the user profile page.
+
 About us page : [10 marks]
+------------------------------
 Create a section containing the history of the restaurant.
 Restaurant images.
 Staff & chef review/ introduction/overview etc.
+
+
 Contact us page : [10 marks]
+------------------------------
 Create a detailed form for user inquiries and feedback. Contact information should ask for information such as address, email, phone number etc.
 User authentication system : [20 marks]
 Signup page using API for authentication.
 Login page using API for authentication.
+
 User profile page : [10 marks]
+--------------------------------
  It should display user information and past reservations using API for user data.
+
 APIs to use : [5 marks]
+--------------------------------
 Authentication : You can use the Reqres API. It allows you to simulate user registration and login. It is not a real authentication system, but it will provide you with realistic responses.
+
 User Data: You can continue to use the Reqres API for user data. It simulates user data responses which you can use to demonstrate user profile functionality.
 Restaurant Data: For restaurant and menu data, consider using a mock data API service like Mockaroo, where you can create custom mock data for your project.
 Note : Remember, these APIs do not provide real functionality, but they allow you to simulate realistic data responses and interactions.
+
 Responsiveness : [10 marks]
+----------------------------------
 All the pages should be fully responsive on all screen sizes.
 
 Project Deployment & submission [Total marks : 5]: 
+-----------------------------------
 Title of your folder in github should be in the following format : [3 marks]
+-----------------------------------
 “Your name, DOM Final, Date of submission”
-Example : “John_Doe_DOM_final_27th_June”
-Once the assignment has been created, upload all the folders on github & commit (save) all the changes, make sure you add a readme file containing detailed description of your thoughts during the assignment creation. [1 mark]
+Example : “John_Doe_DOM_final_17th_Sep_2023”
+Once the assignment has been created, upload all the folders on github & commit (save) all the changes, make sure you add a readme file containing detailed 
+
+description of your thoughts during the assignment creation. [1 mark]
+------------------------------------
 Once done, kindly copy the github link of your assignment & submit the same using your dashboard. [1 mark]
+------------------------------------
