@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Events in Javascript</h2>
+
+
+    <button onclick="document.getElementById('test').innerHTML=Date()">The Time is?</button>
+
+    <p id="test"></p>
+
+
+    <button onclick="displaydate()">Click here For Date and Time</button>
+
+    <script>
+        function displaydate(){
+            document.getElementById('test').innerHTML=Date();
+        }
+    </script>
+
+
+//task 1: onclick Show date only
+//task 2: onclick Show Day only
+//task 3: onclick show alert- welcome 
+    
+</body>
+</html>
