@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>......Content Before Script......</p>
+
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            alert("DOM is Ready");
+        })
+    </script>
+
+    <!--External Script-->
+
+    <script async src="https://javascript.info/article/script-async-defer/long.js?speed=1"></script>
+
+    <!--This content isn't visible until the script loaded-->
+    <p>......Content After Script........</p>
+
+    
+</body>
+</html>

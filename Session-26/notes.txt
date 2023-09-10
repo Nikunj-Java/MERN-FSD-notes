@@ -1,0 +1,36 @@
+Script
+************************************************************************************
+How to include a script in a page
+
+<script src="file_name.js"></script>
+
+
+Always put your <script> before </body> tag why?
+
+Beacause: Browser must wait for the script to download,  once it is downloaded then only it process the page
+
+====================================================================================
+
+We can include the script either in 'defer mode' or 'async mode'
+
+1. Defer Mode: it will tell your browser that not wait for script.Browser will continue to process the HTML page and able to build the DOM,
+               the script later on will be loaded in the background once the DOM built successfully.
+
+
+-----> it  will never block your page
+-----> it will shows the content immideatly but it will complete the DOM load proccess when the script is loaded successfully.
+-----> it will also maintain the order
+        ---script1.js(bigger)
+        ---script2.js(small)
+        ---script3.js(small)
+----> Smaller script will be downloaded first but it will run when all the scripts will be loaded successfully and follows the sequence
+
+
+
+2. Async Mode: This makes the script non-blocking..
+                the script is completely independent
+                Browser never blocks the async
+                Dom will be built and not wait for async Script. it Will built DOM immediatly
+-----> it loads in background and once it is loaded it starts doing its execution
+-----> it do not maintains the sequence of execution.
+       that means if small script is loaded first then it will be executed without waiting for bigger script to execute.
