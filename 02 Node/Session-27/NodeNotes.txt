@@ -91,3 +91,40 @@ type: node
 
 (Note:To exit, press Ctrl+C again or Ctrl+D or type .exit)
 
+
+--------------------------------------------------------------------
+Run a Custom .js File
+
+create test.js file(or filename with .js extension)
+
+console.log("Custom File");
+
+function hello(){
+    console.log("Hello World");
+}
+
+hello();
+
+const array=[1,2,3,4,5];
+
+array.forEach((value)=>{
+    console.log(value);
+})
+
+
+now goto> that folder >open cmd from that folder
+or using cmd navigate to that folder
+> node filename
+eg: node test
+
+you will see the output like below
+
+----------------------------------
+Custom File
+Hello World
+1
+2
+3
+4
+5
+-----------------------------------
