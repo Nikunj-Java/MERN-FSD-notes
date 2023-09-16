@@ -61,5 +61,33 @@ to check the version:
 > npm list -g 
 
 
+Unistallation
+---------------------------
 
+> npm unistall package-name (remove local dependency)
+> npm unistall package-name --save-dev (remove deployment dependency)
+> npm unistall package-name -g (remove global dependency)
+
+
+************************************************************************************
+REPL(Read Execute Print and Loop)
+***********************************************************************************
+- means read input, process and then execute , print the output and repeat the process contuosely untill you close the same
+- it is awailable with node
+How to open this?
+-----------------
+
+goto>cmd>
+type: node
+(hit enter)
+
+> "Hello World"
+> 34+67
+> 78*4
+> const name="Nikunj Soni"
+> name
+> function print(){return "Function Welcome Called"};
+> print();
+
+(Note:To exit, press Ctrl+C again or Ctrl+D or type .exit)
 
