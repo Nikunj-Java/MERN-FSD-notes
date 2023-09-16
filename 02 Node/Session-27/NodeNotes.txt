@@ -128,3 +128,46 @@ Hello World
 4
 5
 -----------------------------------
+************************************************************************************
+NPX: it stands for Node Package Execute
+************************************************************************************
+
+- when you install npm version avove 5.2.0 npx automatically comes along with
+- to check the version npx -v
+
+if it is not installed we can install using npm
+> npm install -g npx
+
+
+difference between NPM and NPX
+
+
+---------------------------------------------------------------------------------
+                    NPM                |                   NPX
+---------------------------------------------------------------------------------
+1. if you want to run the package      | 1. A Package can be executable without installing the package
+through 'npm' then you have mention    |
+the package name in your package.json  |
+and install it Locally                 |
+                                       |
+2. NPM is al tooll that use to install |2. NPX is a tool to execute packages.
+packages              
+
+
+*************************************************************************************
+CORE MODULES (Built-In Modules)
+*************************************************************************************                 |
+core modules  are compiled with node installtion and load automatically when node.js process starts
+
+here some of the core modules are
+1. http: inclused classes,methods and events to create Node.js http server
+2. url:URL resolution and parsing
+3. querystring: deals with query string
+4. path : delas with file path
+5. fs : works with I/O
+6. util: useful for programmers
+
+
+URL Module:
+---------------------------
+with the help of url module we can split the browser URL into different parts
