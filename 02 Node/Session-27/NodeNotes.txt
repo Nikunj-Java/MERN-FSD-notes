@@ -1,0 +1,65 @@
+*****************************************************************************************
+What is Node Js
+*****************************************************************************************
+
+- A javscript runtime environment running on Google choromes V8 Engine
+- it is Server side Javascript Prepared by Ryan Dahl
+- Node.js is a plateform (not a framework)
+- Runs using CMD
+- With Node.js JavaScript is used for both front-end and Backend developement, making the language more consistent and efficient
+- it is fast and scalable
+
+How to Install Node Js?
+-------------------------------------------------------------------------------
+link: https://nodejs.org/en/download
+
+HOW TO CHECK THE VERSION?
+--------------------------
+open CMD
+> node -v
+
+output: v16.14.2
+
+NPM Comes along with node
+--------------------------
+> npm -v
+
+output: 8.19.2
+
+we need to installl NPM:(Node Package Manager)
+- its a registry which is having bunch of packages available which we can borrow  for usage.
+- if you want to share package that also you you can share
+- Installation can be done in two ways
+
+    1. Globally
+    2. Locally
+
+1. Globally
+============================
+> npm i package-name -g 
+
+
+------> when you install globally menas its installed in your system app data folder where the nnode is installed
+------> means you can use it from everywhere in your system
+------> you can execute the command of that package directly
+
+> npm i typescript -g 
+
+to check the version: 
+-----------------------
+> tsc -v
+
+> npm i sass -g
+> sass --version
+> sass --help
+
+[IAAS,PASS,SASS]
+
+(conclusion: Globally installed packages are available everywhere, but it is not recommended that we should INSTALL all packages globbaly )
+--> Because sometime app created with different version and now you want to create another app with latest version
+---> to check global installed packages
+> npm list -g 
+
+
+
+
