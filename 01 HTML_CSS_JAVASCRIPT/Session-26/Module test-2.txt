@@ -35,23 +35,22 @@ Staff & chef review/ introduction/overview etc.
 Contact us page : [10 marks]
 ------------------------------
 Create a detailed form for user inquiries and feedback. Contact information should ask for information such as address, email, phone number etc.
+
 User authentication system : [20 marks]
-Signup page using API for authentication.
-Login page using API for authentication.
+----------------------------------------
+use static values using javascript
+> Signup using array
+> Login using Static values
+---------------------------------------
+
 
 User profile page : [10 marks]
 --------------------------------
- It should display user information and past reservations using API for user data.
+> It should display user information and past reservations using API for user data.
 
-APIs to use : [5 marks]
---------------------------------
-Authentication : You can use the Reqres API. It allows you to simulate user registration and login. It is not a real authentication system, but it will provide you with realistic responses.
 
-User Data: You can continue to use the Reqres API for user data. It simulates user data responses which you can use to demonstrate user profile functionality.
-Restaurant Data: For restaurant and menu data, consider using a mock data API service like Mockaroo, where you can create custom mock data for your project.
-Note : Remember, these APIs do not provide real functionality, but they allow you to simulate realistic data responses and interactions.
 
-Responsiveness : [10 marks]
+Responsiveness : [15 marks]
 ----------------------------------
 All the pages should be fully responsive on all screen sizes.
 
