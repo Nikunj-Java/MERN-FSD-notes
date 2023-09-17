@@ -46,7 +46,7 @@ use static values using javascript
 
 User profile page : [10 marks]
 --------------------------------
-> It should display user information and past reservations using API for user data.
+> It should display user information and past reservations using ARRAY for user data.
 
 
 
