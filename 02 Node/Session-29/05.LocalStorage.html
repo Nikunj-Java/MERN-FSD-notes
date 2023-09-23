@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Local Storage Example</h2>
+
+    <script>
+        localStorage.setItem("id","1");
+        localStorage.setItem("name","Nikunj Soni");
+
+
+        console.log("id:",localStorage.getItem("id"));
+        console.log("Name:",localStorage.getItem("name"));
+
+        console.log("After Using RemoveItem");
+        //to remove particular item
+        localStorage.removeItem("id");
+        console.log("id:",localStorage.getItem("id"));
+        localStorage.removeItem("name");
+        console.log("name:",localStorage.getItem("name"));
+
+
+        //to clear everything
+        localStorage.clear();
+        console.log("After Using Clear");
+        console.log("id:",localStorage.getItem("id"));
+        console.log("Name:",localStorage.getItem("name"));
+    </script>
+    
+</body>
+</html>

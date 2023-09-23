@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Event Delegation Example</h2>
+    <ul id="myList">
+        <li> List -1 </li>
+        <li> List -2 </li>
+        <li> List -3 </li>
+
+    </ul>
+
+    <script>
+      const ele=document.getElementById('myList');
+      ele.addEventListener('click',(event)=>{
+
+        if(event.target.tagName==='LI'){
+            console.log(event.target.textContent);
+        }
+        
+      })
+    </script>
+    
+</body>
+</html>
