@@ -1,0 +1,23 @@
+Weekly Assignment - 1 : DOM
+
+Total assignment marks : 50 
+
+Deliverables [Total marks : 45] :
+Create a Beautiful Gallery either with flex or Grid.The gallery will have 4 images. (In a single row). [5 marks]
+When you click on first image, a form appears in which you registers yourself (name, email, username) [5 marks]
+When you click on the second image the registered person’s name and username should be displayed.[5 marks]
+When you click on the third image (Image of dice), it should randomly produce a value between 1 and 6 both included. You can click the image 3 times, after clicking the image 3 times if the sum of all three generated values is greater than 10 , then only you are allowed to click on the 4th image. If it is not greater than 10, then when the last image is clicked “try again after scoring more than 10” message should be displayed. [5 marks]
+When the fourth image is clicked, it should generate a random 12 digit text as a coupon.(Style it accordingly). [5 marks]
+All the images can be clicked only once & can be clicked only in order (For example 2nd image can be clicked only after the 1st one has been clicked) [5 marks]
+For the 3rd image, if the sum of numbers is less than 10 only then they can reclick the 3rd image again. (In order to click the 4th image)[5 marks]
+If the user fails to achieve a total of numbers which is more than 10 even for the 2nd attempt while clicking the 3rd card, then display the message  “Bad luck” & do not give another chance.[5 marks]
+If the user is able to generate a 12 digit coupon code, congratulate them by displaying a congratulations image.[5 marks]
+
+Project Deployment & submission [Total marks : 5]: 
+Title of your folder in github should be in the following format : [3 marks]
+“Your name, DOM 1, Date of submission”
+Example : “John_Doe_DOM_1_24rd_may”
+Once the assignment has been created, upload all the folders on github & commit (save) all the changes, make sure you add a readme file containing detailed description of your thoughts during the assignment creation. [1 mark]
+Once done, kindly copy the github link of your assignment & submit the same using your dashboard. [1 mark]
+
+DeadLine: 29/09/2023
