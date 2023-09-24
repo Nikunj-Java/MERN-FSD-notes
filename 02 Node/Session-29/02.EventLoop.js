@@ -9,17 +9,3 @@ console.log("This is step-3");
 
 
 
-function process(num1,num2){
-    return num1+num2;
-}
-
-function addition(num){
-    return process(num,num+5);
-}
-
-function printResult(num){
-    var add= addition(num);
-    console.log(add);
-}
-
-printResult();
