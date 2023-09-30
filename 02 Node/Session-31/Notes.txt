@@ -17,3 +17,10 @@ OOPS principles
 *********************************************************************************
 class and Objects
 - when we create an object its small part which can have the access of all the class functionality
+
+
+1. Encapsulation: same value can treat differently in your project
+there are two ways of it
+
+    A. Method Overriding
+    B. Method Overloading
