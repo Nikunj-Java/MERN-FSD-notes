@@ -23,4 +23,9 @@ class and Objects
 there are two ways of it
 
     A. Method Overriding
+    ------------------------
+    > when child class is extending a prent class means a child can access all the properties of parent class
+    > bu child can also implement its own similar functionality and use it by overriding parent method.
     B. Method Overloading
+    ------------------------
+    > same functiona name and call it with different paramenters or different types (Multiple Behaviour) 
