@@ -1,0 +1,14 @@
+********************************************************************************
+COllection Iterators
+********************************************************************************
+
+
+1. Genrator:
+
+        ---> special function which can be  paused and again resumed
+        ---> for creating same we will  use simple function systax
+        ---> for pause we will use 'Yeild' key word
+2. Iterators:
+        --->Objects implemented using Iterator protocol(interface)
+        --->it provides standard way to iterate over arrays ,string, maps,sets...
+        

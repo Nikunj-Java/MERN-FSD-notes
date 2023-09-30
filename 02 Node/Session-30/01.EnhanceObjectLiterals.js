@@ -48,6 +48,6 @@ console.log(car1.carName);
 console.log(car1.color);
 console.log(car1.Model);
 car1.start();
-car1.stop();
+car1.start();
 
 

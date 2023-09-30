@@ -205,6 +205,16 @@ console.log(symbol1.toString());
 console.log(symbol1==symbol2); //unique symbol
 
 
+********************************************************************************
+COllection Iterators
+********************************************************************************
+
+
+1. Genrator:
+
+        ---> special function which can be  paused and again resumed
+        ---> for creating same we will  use simple function systax
+        ---> for pause we will use 'Yeild' key word
 
 
 
