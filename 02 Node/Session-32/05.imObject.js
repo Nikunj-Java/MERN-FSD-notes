@@ -13,6 +13,7 @@ console.log(languageKnown);
 //the above Object is mutable , means we can add the new item to it
 // how to make it immutable?
 
+ 
 const frozenObject=Object.freeze(languageKnown);
 
 console.log(frozenObject);
@@ -28,3 +29,5 @@ delete frozenObject.ang;
 console.log("After Deleting",frozenObject);
 
 // the above example is immutable, we can not modify the object
+
+ 
