@@ -32,7 +32,4 @@ class and Objects
     ------------------------
     > same functiona name and call it with different paramenters or different types (Multiple Behaviour) 
     
-    C. Abstraction
-    ------------------------
-    > we can limit the access of variables outside the class by using access specifier like public and private
-    
+ 

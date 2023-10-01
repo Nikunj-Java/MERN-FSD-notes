@@ -1,0 +1,41 @@
+Abstraction
+------------------------
+    > we can limit the access of variables outside the class by using access specifier like public and private
+    
+Prototype
+---------------
+    > creating many  objects using functional constructor 
+
+COmposition
+--------------
+    > help us for creating complex objects by combining small objects and make it reusable
+PureFunction
+--------------
+- a function which always returns same result when you pass same argument.
+- maintains the state of your data, its not changing it during program execution.
+
+program:
+
+
+        let rateOfInterest=5.5;
+
+        function calaulateInterest(principle,rateOfInterest,noOfYears){
+
+            return (principle*rateOfInterest*noOfYears)/100;
+        }
+
+        const result= calaulateInterest(1000,4.5,3);
+
+        console.log("Interest: "+ result);
+
+Conslusion: This function is considered as Pure function because its not affecting fromsome external states or side effects.
+----------------------------------------------------------------------------
+
+===============================================================================
+Immutability in Javascript
+===============================================================================
+
+Immutable Objects:
+    > when the object is immutable you can not add any new property to your object.
+    > we cant modify it.
+    
