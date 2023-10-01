@@ -19,13 +19,20 @@ class and Objects
 - when we create an object its small part which can have the access of all the class functionality
 
 
-1. Encapsulation: same value can treat differently in your project
-there are two ways of it
+1. Encapsulation: wrapping the data to secure it.
+
+2. Polymorphism: 'poly' means many ,'morph' means various forms
 
     A. Method Overriding
     ------------------------
     > when child class is extending a prent class means a child can access all the properties of parent class
     > bu child can also implement its own similar functionality and use it by overriding parent method.
+    
     B. Method Overloading
     ------------------------
     > same functiona name and call it with different paramenters or different types (Multiple Behaviour) 
+    
+    C. Abstraction
+    ------------------------
+    > we can limit the access of variables outside the class by using access specifier like public and private
+    
