@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="myform" action="">
+        Enter Your Name:
+        <input type="text" name="myname"/>
+
+        <input type="button" value="Set Cookie" onclick="SaveCookie();"/>
+
+    </form>
+
+    <script>
+       function SaveCookie(){
+        if(document.myform.myname.value == ""){
+            alert("Please Enter Value");
+            return;
+        }
+        
+        cookievalue=escape(document.myform.myname.value)+ ";";
+
+        document.cookie= "name=" +cookievalue;
+
+
+        document.write("Cookie Set Successfully: "+"name="+cookievalue);
+       }
+    </script>
+    
+</body>
+</html>

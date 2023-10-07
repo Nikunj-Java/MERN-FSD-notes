@@ -4,3 +4,42 @@ Higher Order Function
 - Function takes more than one function as an argument or Function returns a function itself.
 - at that time we execute main function and inside that whatever the inner function we have written 
   will execute one by one
+
+******************************************************************************
+Currying
+******************************************************************************
+
+> using this we can transform function with multiple arguments into a sequence of functions, each will take sungle argument
+
+
+***********************************************************************************
+ Security
+***********************************************************************************
+
+1. Cross Site Scripting (XSS) Prevention
+-----------------------------------------
+- XSS attacks occured on your page , where user can enter some script in the form and your form is accepting that untrusted data without any kind of validations
+- To Prevent we always use validate user input to directly display on a web page and better to avoid .innerHTML because it is used to add data directly into DOM.
+
+2. Cross Site Request Forgery
+-----------------------------------------
+- these attack ocured when user click on some trsuted website and from that website someone can track the user and perform unwanted action to someanother website.
+-  To prevent: Generate CSRF tokens or use cookies (same site) to protect from CSRF attacks.
+3. Secure Communication:
+-----------------------------------------
+- always use HTTP protocol , avoid using HTTP
+
+4. Input Validation and Sanotization
+------------------------------------------
+- validate and Sanitize all user inputs to prevent from entering some wrong input. Add Backend Validation as well.
+    > add validation: at serverside coading
+    > add Validation to direct Db as well
+
+5. Secure AUthentication and Authorization:
+-------------------------------------------
+    > username and password while  registering 'Nikunj' and 'Nikunj@123' , so we can encrypt the password by using some Hashing Technique.
+        and decrypt package using for encription.
+    > Authorization we can manage using Role Creation: Admin, Manager,user
+
+6. Secure Thirdparty Libraries: Navigation, Payment
+----------------------------------------------------
