@@ -1,0 +1,6 @@
+********************************************************************************
+Higher Order Function
+********************************************************************************
+- Function takes more than one function as an argument or Function returns a function itself.
+- at that time we execute main function and inside that whatever the inner function we have written 
+  will execute one by one
