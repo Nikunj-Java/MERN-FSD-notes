@@ -17,4 +17,4 @@ goto>vs code> terminal>new terminal>cmd
 
 to start the app
 
-> npm start.
+> npm start
