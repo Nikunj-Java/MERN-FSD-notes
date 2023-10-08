@@ -18,3 +18,12 @@ goto>vs code> terminal>new terminal>cmd
 to start the app
 
 > npm start
+
+---------------------------------------
+if still problem is there> do the following
+
+STEP:1 INSTALL REACT FIRST
+--------------------------
+> npm install create-react-app -g
+> create-react-app firstapp        (do not use capital letters)
+
