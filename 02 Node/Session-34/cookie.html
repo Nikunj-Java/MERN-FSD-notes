@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Example</title>
+</head>
+<body>
+
+    <script>
+
+        //01. create function to set Cookie
+        function setCookie(name,value,expiry){
+
+            var cookie= name +"="+encodeURIComponent(value);
+            //console.log(cookie);
+            if(typeof expiry === "number"){
+                //setting cookies expiry age
+                cookie += ";max-age=" +(expiry*24*60*60);
+                //console.log(cookie);
+                document.cookie=cookie;
+            }
+
+        }
+
+        //02. create function to get Cookie
+        function getCookie(name){
+
+            var cookieArray=document.cookie.split(";");
+
+            //applying loop anch cheking cookie
+            for(var i=0; i<cookieArray.length;i++)
+            {
+                var myCookie=cookieArray[i].split("=");
+
+                //removing unwanted space if any
+                if(name == myCookie[0].trim()){
+                    return decodeURIComponent(myCookie[1]);
+                }
+            }
+
+            return null;
+
+        }
+
+        //03. create function to check the Cookie
+        function checkCookie(){
+             
+            var firstName=getCookie("firstName");
+
+            if (firstName !=null){
+                alert("Welcome..!! "+firstName);
+            }
+            else{
+                firstName=prompt("Enter your first Name");
+                if(firstName !="" && firstName !=null){
+                    setCookie("firstName",firstName,1);
+                }
+            }
+
+        }
+
+        window.onload = checkCookie;
+
+
+    </script>
+
+    
+
+    
+</body>
+</html>
