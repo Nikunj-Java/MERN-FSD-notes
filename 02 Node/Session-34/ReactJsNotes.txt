@@ -1,0 +1,20 @@
+*******************************************************************************************
+REACT Js (ME--R--N)
+*******************************************************************************************
+SPA: Single Page Application we can create using React
+
+Its a Library:
+---------------
+> Developed By Facebook
+> Developement server which helping us to create UI.
+
+
+How to Create React Application....??
+--------------------------------------
+goto>vs code> terminal>new terminal>cmd
+
+> npx create-react-app myApp
+
+to start the app
+
+> npm start.
