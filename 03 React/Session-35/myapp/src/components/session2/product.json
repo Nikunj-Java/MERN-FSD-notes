@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"Pencil",
+        "price":10,
+        "description":"HB-Extra Dark",
+        "rating":4.5
+    },
+    {
+        "id":2,
+        "name":"Pen",
+        "price":15,
+        "description":"Gel Pen",
+        "rating":4.9
+    },
+    {
+        "id":3,
+        "name":"Scale",
+        "price":20,
+        "description":"Easy to Draw",
+        "rating":4.2
+    },
+    {
+        "id":4,
+        "name":"Strencil",
+        "price":25,
+        "description":"All Shapes",
+        "rating":5.0
+    }
+]
