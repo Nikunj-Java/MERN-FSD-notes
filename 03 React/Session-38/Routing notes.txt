@@ -1,0 +1,17 @@
+when you want to make links and based on the links we want to render the components we use ROUTING
+
+by default it will load HOME COMPONENT
+when we click on Register it will open Register Component
+click login: open login component
+
+to do this we need react-router-dom, that we need to install manually
+
+> npm i react-router-dom
+
+---it is providing many components from its which we will use for  creating Router.
+
+<BrowserRouter> Main component based on that we do the routing
+<Router> Parent tag to add all routes
+<link> for creating Links (Replacement of <a> tag)
+
+add  <BrowserRouter> tag in app.js for rendering
