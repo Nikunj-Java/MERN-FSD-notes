@@ -7,7 +7,7 @@ const Greeting =()=>{
         setName(event.target.value);
     };
     return(
-        <div>
+        <div className="container">
             <lable> Enter Your Name: 
             <input type="text" value={name} onChange={handleInputChnage}/>
             </lable>
