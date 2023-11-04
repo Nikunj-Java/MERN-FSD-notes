@@ -1,0 +1,19 @@
+Use Effect:
+--------------------------
+By using HOOK , you tell react that please render the component after doing something
+
+Syntax:
+
+useEffect(()->{
+    //you code here
+})
+
+Or
+
+useEffect(()->{
+    //you code here
+},[])
+
+useEffect(()->{
+    //you code here
+}[props,state])
