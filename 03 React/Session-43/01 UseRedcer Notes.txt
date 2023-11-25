@@ -1,0 +1,18 @@
+**************************************************************************************
+Use Reducer  Hook
+**************************************************************************************
+
+- UseReducer Hook is used to manage more complex state with which we are including into our componentes
+- It is an Alternative of useState Hook
+
+How to Apply???
+---------------
+- when you want to apply state logic which involves multiple sub states or when next state depends upon 
+previous state then we should use useReducer Hook
+
+- it accepts two types of arguments
+1. CURRENT state    : prev state of particular state which is decalred
+
+2. ACTION: which executes and based on that we create an updated state of the current state.
+
+

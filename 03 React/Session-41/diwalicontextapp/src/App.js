@@ -8,20 +8,23 @@ import ThemedComponent from './components/usecases3/ThemeComponent';
 import { ThemeProvider } from './components/usecases3/ThemeContext';
 import { AuthProvide } from './components/usecase4/AuthContext';
 import UserInfo from './components/usecase4/Userinfo';
+import Counter from './components/reducercase1/Counter';
 
 function App() {
   return (
     <div>
       <h1>Diwali App</h1>
-      <AuthProvide>
+      {/* <AuthProvide>
         <h1>Authentication App</h1>
         <UserInfo/>
-      </AuthProvide>
+      </AuthProvide> */}
       {/* <GrandParent/>
       <MyGrandParent/>
      <ThemeProvider>
         <ThemedComponent/>
      </ThemeProvider> */}
+
+     <Counter/>
       
     </div>
     
