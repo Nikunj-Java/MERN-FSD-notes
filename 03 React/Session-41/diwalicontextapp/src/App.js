@@ -9,6 +9,7 @@ import { ThemeProvider } from './components/usecases3/ThemeContext';
 import { AuthProvide } from './components/usecase4/AuthContext';
 import UserInfo from './components/usecase4/Userinfo';
 import Counter from './components/reducercase1/Counter';
+import Agecounter from './components/reducercase2/Agecounter';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
      </ThemeProvider> */}
 
      <Counter/>
+     <Agecounter/>
       
     </div>
     
