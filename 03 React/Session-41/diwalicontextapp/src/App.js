@@ -10,6 +10,7 @@ import { AuthProvide } from './components/usecase4/AuthContext';
 import UserInfo from './components/usecase4/Userinfo';
 import Counter from './components/reducercase1/Counter';
 import Agecounter from './components/reducercase2/Agecounter';
+import SimpleForm from './components/reducercase3/SimpleForm';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
 
      <Counter/>
      <Agecounter/>
+     <SimpleForm/>
       
     </div>
     
