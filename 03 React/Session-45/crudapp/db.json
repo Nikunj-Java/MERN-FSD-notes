@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "title": "Welcome",
+      "body": "Nikunj",
+      "id": 1
+    },
+    {
+      "title": "Hello",
+      "body": "Welcome to Educonix",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
