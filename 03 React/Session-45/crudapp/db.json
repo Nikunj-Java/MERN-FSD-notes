@@ -1,14 +1,9 @@
 {
   "posts": [
     {
-      "title": "Welcome",
-      "body": "Nikunj",
+      "title": "Hello Everyone...!!!",
+      "body": "I am Nikunj Soni, I am JAVA FSD Trainer",
       "id": 1
-    },
-    {
-      "title": "Hello",
-      "body": "Welcome to Educonix",
-      "id": 2
     }
   ],
   "comments": [],
