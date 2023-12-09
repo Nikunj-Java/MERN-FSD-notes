@@ -7,3 +7,13 @@ it('should equal to 0',()=>{
   const {getByTestId}=render(<TestElements/>)
   expect(getByTestId('counter')).toHaveTextContent(0);
 });
+
+it('should be enable',()=>{
+    const {getByTestId}=render(<TestElements/>)
+    expect(getByTestId('button-up')).not.toHaveAttribute('disable');
+  });
+
+  it('should be disable',()=>{
+    const {getByTestId}=render(<TestElements/>)
+    expect(getByTestId('button-down')).toBeDisabled();
+  });

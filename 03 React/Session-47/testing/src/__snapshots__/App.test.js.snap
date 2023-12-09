@@ -21,6 +21,21 @@ exports[`should take a snapshot 1`] = `
     >
       Down
     </button>
+    <h1
+      data-testid="counter"
+    >
+      0
+    </h1>
+    <button
+      data-testid="button-up"
+    >
+      Up
+    </button>
+    <button
+      data-testid="button-down"
+    >
+      Down
+    </button>
     <header
       class="App-header"
     >

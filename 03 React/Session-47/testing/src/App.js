@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import TestElements from './TestElement';
+import TestEvent from './TestEvent';
 
 function App() {
   return (
     <div className="App">
       <TestElements/>
+      <TestEvent/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
