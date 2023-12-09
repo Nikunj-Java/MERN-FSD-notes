@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <h1
+      data-testid="counter"
+    >
+      0
+    </h1>
+    <button
+      data-testid="button-up"
+    >
+      Up
+    </button>
+    <button
+      data-testid="button-down"
+      disabled=""
+    >
+      Down
+    </button>
+    <header
+      class="App-header"
+    >
+      <img
+        alt="logo"
+        class="App-logo"
+        src="logo.svg"
+      />
+      <p>
+        Edit 
+        <code>
+          src/App.js
+        </code>
+         and save to reload.
+      </p>
+      <a
+        class="App-link"
+        href="https://reactjs.org"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Learn React
+      </a>
+    </header>
+  </div>
+</DocumentFragment>
+`;

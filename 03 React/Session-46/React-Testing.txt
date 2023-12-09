@@ -1,0 +1,13 @@
+Testing ?
+.................
+
+Check our application is giving proper output or not?
+
+actual output === expected output
+
+Arrange: assume your application is in some certian state
+
+Act: do some action
+
+Assert: check aasert the expected and actual output
+
