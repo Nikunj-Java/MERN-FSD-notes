@@ -36,6 +36,20 @@ app.get('/api/mytodos/:id',(req,res)=>{
     res.json(mytodo);
 });
 
+//insert record 
+
+app.post('/api/mytodos',(req,res)=>{
+
+    const newTodo={
+        id:mytodos.length+1,
+        text:req.body.text,
+        done:false,
+    };
+
+    mytodos.push(newTodo);
+    res.status(201).json(newTodo);
+});
+
 
 
 //start the server to particular port
