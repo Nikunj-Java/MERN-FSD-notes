@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Web Socket Service</h1>
+    <input type="text" id="message" placeholder="Enter your Message To Broadcast">
+    <button onclick="sendMsg()">Send</button>
+    <ul id="chat"></ul>
+
+    <script>
+        const socket= new WebSocket("ws://localhost:3000");
+
+        function sendMsg(){
+            const messageInput=document.getElementById('message');
+            socket.send(messageInput.value);
+            alert("Message Send to the Server");
+            messageInput.value='';
+        }
+    </script>
+    
+</body>
+</html>
