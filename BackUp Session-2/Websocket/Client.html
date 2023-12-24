@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Web Socket Service</h1>
+     
+    <ul id="chat"></ul>
+
+    <script>
+        const socket= new WebSocket("ws://localhost:3000");
+
+        
+
+        socket.addEventListener('message',(event)=>{
+            const chat=document.getElementById('chat');
+             
+             if(event.data instanceof Blob){
+                const reader= new FileReader();
+                reader.onload= function(){
+                    const text=reader.result;
+                    appendMessage(`Received From Server:${text}`,chat);
+                };
+                reader.readAsText(event.data);
+             }else{
+                appendMessage(`Reaceive From Server: ${event.data}`,chat);
+             }
+
+        });
+
+        function appendMessage(message,element){
+            const p= document.createElement('li');
+            p.textContent=message;
+            element.appendChild(p);
+        }
+    </script>
+    
+</body>
+</html>

@@ -22,6 +22,23 @@
             alert("Message Send to the Server");
             messageInput.value='';
         }
+
+
+        socket.addEventListener('message',(event)=>{
+            const chat=document.getElementById('chat');
+            const message=document.createElement('li');
+            message.textContent=event.data;
+
+            const blob=event.data;
+            const reader= new FileReader();
+            reader.onload=function(){
+                const textFromBlob= reader.result;
+                message.textContent=msg;
+            }
+
+
+            chat.appendChild(message);
+        })
     </script>
     
 </body>
