@@ -1,0 +1,35 @@
+
+DBMS: Database Management System
+RDBMS: Relational Database Management System
+*********************************************************************
+It stores the data in the form of Table and when you have multiple tables you can make a relationship between those table
+
+
+Relationship:
+------------------
+
+1. One to One 
+2. One to Many
+3. Many to Many
+4. Many to One
+
+------------------------------------------------------------------------------------
+
+How to decide Table Creation?
+-----------------------------
+Structure Database
+
+Entity: Object you can consider for your DB
+	product,customer,order,cart,category
+
+Attributes: the feature (Data) of the Entity
+
+	product: id,name,price,description,quantity
+	customer:id,name,address,phone,email
+	order: id,date,payment,mode_of_payment,productDetails,customerDetails
+	cart: id, customerDetails,productDetails,totalAmount
+
+Entity we will create as table and attributes are the fields of that table.
+
+
+ 
