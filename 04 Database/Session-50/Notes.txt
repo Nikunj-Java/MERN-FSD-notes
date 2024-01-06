@@ -30,6 +30,86 @@ Attributes: the feature (Data) of the Entity
 	cart: id, customerDetails,productDetails,totalAmount
 
 Entity we will create as table and attributes are the fields of that table.
+********************************************************************************************
+SQL Queries
+********************************************************************************************
+
+Create Database
+-------------------------
+> create database eduonix;
+
+to check all databases
+-------------------------
+> show databases;
+
+to use a particulat database:
+-------------------------------
+> use eduonix;
+Create Table
+--------------------------
+> create table product ( id int primary key auto_increment,name varchar(100),price decimal(10,2),date_added timestamp default now()); 
 
 
+product----> id int, name,price, date
+
+to check the tables
+--------------------------
+> show tables;
+
+to check the structure of table
+> describe product;
+
+
+
+Insertion of records
+----------------------
+> insert into product(name,price) values('HP Laptop','67000');
+
+Fetch the Records
+--------------------
+> select * From product;
+
+Fetch the Records with some condition(Filteration of Records)
+--------------------
+> select * From product where id=1;
+> select * From product where name='HP Laptop';
+
+
+Update the Record
+--------------------
+> update product set name='HP Laptop ABC' where id =1;
+
+Delete Record
+-------------------
+> delete from product where id=2;
  
+Delete the Entire Table
+------------------------
+> drop table product;
+
+
+*****************************************************************************************
+Operations in RDBMS
+*****************************************************************************************
+
+DDL,DML,DQL,TCL
+
+1. DDL: Data Defination Language
+--------------------------------
+	> CREATE
+	> ALTER
+	> DROP
+2. DML: Data  Manipulation Language
+------------------------------------
+	>INSERT
+	>UPDATE
+	>DELETE
+3. DQL: Data Query Language
+------------------------------------
+	SELECT
+
+4. TCL: Transaction Control Language
+-------------------------------------
+
+	commit();
+	rollback();
