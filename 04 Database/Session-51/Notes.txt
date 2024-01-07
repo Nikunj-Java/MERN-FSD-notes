@@ -61,3 +61,33 @@ student.cid=classes.class_id;
 
 SELECT s.student_name,s.age,c.class_name FROM student s join classes c ON 
 s.cid=c.class_id;
+
+
+
+
+*************************************************************************************
+OUTER JOIN
+*************************************************************************************
+Left Outer Join
+-----------------------
+left outer join will give all common details +extra details from left hand side table
+
+SELECT s.student_name,s.age,c.class_name FROM student s LEFT OUTER JOIN classes c ON s.cid=c.class_id;
+
+
+Right Outer Join
+----------------------
+SELECT s.student_name,s.age,c.class_name FROM student s RIGHT OUTER JOIN classes c ON s.cid=c.class_id;
+
+=====================================================================================
+
+Get all common + left side table + right side table
+
+FULL OUTER JOIN(UNION)
+-----------------------
+
+
+SELECT s.student_name,s.age,c.class_name from student s left join classes c on s.cid=c.class_id
+UNION
+SELECT s.student_name,s.age,c.class_name FROM student s RIGHT OUTER JOIN classes c ON s.cid=c.class_id;
+ 
