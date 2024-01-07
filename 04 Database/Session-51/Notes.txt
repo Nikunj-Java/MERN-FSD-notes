@@ -1,0 +1,63 @@
+Create Table With Primary Key
+-----------------------------------------------
+
+create TABLE classes(class_id int PRIMARY KEY AUTO_INCREMENT,class_name varchar(20));
+
+
+use that PK in another table as FK(Foreign Key)
+------------------------------------------------
+create TABLE student(
+	student_id int PRIMARY KEY AUTO_INCREMENT,
+	student_name varchar(20),
+	age int,
+	cid int,
+	FOREIGN KEY(cid) REFERENCES classes(class_id)
+);
+
+
+Let's Insert Some Records
+------------------------------------------
+insert into classes (class_name) values("BCA FY");
+insert into classes (class_name) values("BCA SY");
+insert into classes (class_name) values("BCA TY");
+
+
+
+insert  into student (student_name,age,cid) values('Mariya Khan','27','3');
+insert  into student (student_name,age,cid) values('Sakshi Rahangdale','26','2');
+insert  into student (student_name,age,cid) values('Rohit Kumar','31','1');
+
+
+How to fetch the data from single table?
+------------------------------------------------
+> select * from student;
+> select * from classes;
+
+(* Means fetch all data)
+
+---fetch student name and age
+> select student_name,age from student;
+
+
+Fetch using some filter clause like WHERE
+-------------------------------------------------
+> select * from student where student_id=1;
+> select * from student where student_name='Sakshi Rahangdale';
+> select * from student where age>30;
+> select * from student where cid=3;
+
+
+===============================================================================
+
+Join Query
+-------------
+(Inner join will fetch the common data from both the table)
+
+
+SELECT student.student_name,student.age,classes.class_name FROM student join classes ON 
+student.cid=classes.class_id;
+
+-------------------------------------------------------------------------------------
+
+SELECT s.student_name,s.age,c.class_name FROM student s join classes c ON 
+s.cid=c.class_id;
