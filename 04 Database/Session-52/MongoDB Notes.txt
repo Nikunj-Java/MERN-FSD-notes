@@ -1,0 +1,14 @@
+***********************************************************
+MONGO  DB
+***********************************************************
+1. CREATE DATABASE
+	> use name_of_database
+	eg: use classes
+2. CHECK AVAILABLE DATABASE
+	> show databases
+
+3. CREATE COLLECTION IN CURRENT DATABASE
+	> db.createCollection("student")
+
+4. INSERT RECORDS IN MONGODB COLLECTION
+	> db.student.insertOne({name:"Nikunj Soni",email:"nikunj@gmail.com",country:"INDIA"})

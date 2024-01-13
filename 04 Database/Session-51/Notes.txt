@@ -91,3 +91,9 @@ SELECT s.student_name,s.age,c.class_name from student s left join classes c on s
 UNION
 SELECT s.student_name,s.age,c.class_name FROM student s RIGHT OUTER JOIN classes c ON s.cid=c.class_id;
  
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+REANMING TABLE NAMES
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SELECT s.student_name AS STUDENT_NAME,s.age AS STUDENT_AGE,c.class_name AS CLASS_NAME  FROM student s RIGHT OUTER JOIN classes c ON s.cid=c.class_id;
