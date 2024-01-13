@@ -51,3 +51,17 @@ MONGO  DB
 	GET ALL NAMES WITH SPECIFIED RESULT WITHOUT ID
 	----------------------------------------
 	> db.student.find({},{name:1,country:1,_id:0})
+
+7. UPDATE RECORD IN MONGO DB
+
+	UPDATE SINGLE RECORD
+	----------------------
+	> db.student.updateOne({email:"nikunj@gmail.com"},{$set:{name:"bobby"}})
+	> db.student.updateOne({email:"nikunj@gmail.com"},{$set:{name:"Nikunj Soni"}})
+
+8. LOGICAL OPERATORS
+
+	> db.student.find({$or:[{country:"US"},{country:"INDIA"}]})
+	> db.student.find({$and:[{country:"US"},{country:"INDIA"}]})
+	> db.student.find({$and:[{name:"NIKUNJ SONI"},{country:"INDIA"}]})
+	> db.student.find({$nor:[{country:"US"},{country:"INDIA"}]})
