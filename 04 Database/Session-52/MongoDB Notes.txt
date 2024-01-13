@@ -12,3 +12,25 @@ MONGO  DB
 
 4. INSERT RECORDS IN MONGODB COLLECTION
 	> db.student.insertOne({name:"Nikunj Soni",email:"nikunj@gmail.com",country:"INDIA"})
+
+5. INSERT MANY RECORDS IN MONGO DB COLLLECTION
+	> db.student.insertMany([
+{name:"Sakshi",email:"sakshi@gmail.com",country:"INDIA"},
+{name:"Tanmay",email:"tanmay@gmail.com",country:"INDIA"},
+{name:"Alex",email:"alex@gmail.com",country:"US"},
+{name:"jhon",email:"jhon@gmail.com",country:"China"},{name:"Peter",email:"peter@gmail.com",country:"London"},
+{name:"Siri",email:"siri@gmail.com",country:"US"}
+])
+
+
+6.FETCH THE RECORDS
+	FETCH ALL RECORDS
+	-----------------
+	> db.student.find()
+
+	FETCH ALL RECODS WITH FILTER
+	-----------------------------
+	> db.student.find({name:"Nikunj Soni"})
+	> db.student.find({email:"nikunj@gmail.com"})
+	> db.student.find({country:"US"})
+	
