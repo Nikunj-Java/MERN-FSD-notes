@@ -34,3 +34,20 @@ MONGO  DB
 	> db.student.find({email:"nikunj@gmail.com"})
 	> db.student.find({country:"US"})
 	
+	FETCH PARTICULAR RECORD
+	----------------------------
+	> db.student.findOne({email:"nikunj@gmail.com"})
+	
+	GET ALL NAMES ONLY
+	-----------------------
+	>db.student.find({},{name:1})
+	>db.student.find({},{email:1})
+	>db.student.find({},{country:1})
+	
+	GET ALL NAMES WITH SPECIFIED RESULT
+	----------------------------------------
+	> db.student.find({},{name:1,country:1})
+
+	GET ALL NAMES WITH SPECIFIED RESULT WITHOUT ID
+	----------------------------------------
+	> db.student.find({},{name:1,country:1,_id:0})
