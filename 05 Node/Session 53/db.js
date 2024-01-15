@@ -1,7 +1,7 @@
 //include Dependency og mongoose
 
 const mongoose= require('mongoose');
-const { addUser, getALLUsers } = require('./users');
+const { addUser, getALLUsers, getUserById } = require('./users');
 const dbURL="mongodb://127.0.0.1:27017/classes";
 
 mongoose.connect(dbURL)
@@ -9,4 +9,5 @@ mongoose.connect(dbURL)
 .catch((err)=>{console.log(err)});
 
 //addUser();
-getALLUsers();
+//getALLUsers();
+getUserById("65a5506afe2446b410996b6c");

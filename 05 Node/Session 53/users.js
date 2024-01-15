@@ -20,4 +20,10 @@ const getALLUsers=()=>{
     .catch((err)=>console.log(err))
 }
 
-module.exports={addUser,getALLUsers}
+const getUserById=(id)=>{
+    Student.findById(id)
+    .then((user)=>console.log(user))
+    .catch((err)=>console.log(err))
+}
+
+module.exports={addUser,getALLUsers,getUserById}
