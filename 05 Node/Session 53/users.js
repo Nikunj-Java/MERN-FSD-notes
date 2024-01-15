@@ -3,10 +3,10 @@ const Student=require('./model');
 const addUser=()=>{
 
     const newStudent=new Student({
-        name:"ABCD",
-        email:"abcd@gmail.com",
+        name:"EduonixUser2",
+        email:"eu2@gmail.com",
         country:"INDIA",
-        marks:99
+        marks:95
     })
 
     newStudent.save()
@@ -14,4 +14,10 @@ const addUser=()=>{
     .catch((err)=>console.log("Error",err));
 }
 
-module.exports={addUser}
+const getALLUsers=()=>{
+    Student.find()
+    .then((resp)=>console.log(resp))
+    .catch((err)=>console.log(err))
+}
+
+module.exports={addUser,getALLUsers}
