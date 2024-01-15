@@ -1,0 +1,20 @@
+1. create  package.json file
+> npm init -y
+
+2. INSTALL MONGOOSE
+> npm install mongoose
+
+3. CREATE db.json FILE
+
+
+const mongoose= require('mongoose');
+const dbURL="mongodb://localhost:27017/student";
+
+mongoose.connect(dbURL)
+.then(()=>console.log("Connected"))
+.catch((err)=>{console.log(err)});
+
+4. RUN THE NODE FILE
+> node db.json
+
+---------------------------------

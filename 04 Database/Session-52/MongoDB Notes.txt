@@ -65,3 +65,13 @@ MONGO  DB
 	> db.student.find({$and:[{country:"US"},{country:"INDIA"}]})
 	> db.student.find({$and:[{name:"NIKUNJ SONI"},{country:"INDIA"}]})
 	> db.student.find({$nor:[{country:"US"},{country:"INDIA"}]})
+
+9. ADDING NEW DATA TYPE IN A SAME COLLECTION RECORD
+	> db.student.updateOne({email:"nikunj@gmail.com"},{$set:{marks:40}})
+
+10. FILTERING RECORD BASED ON BOOLEAN TYPE
+	> db.student.find({name:{$exist:true}})
+
+11. SORTING RECORD
+	> db.student.find({},{name:1,marks:1,_id:0}).sort({name:1})    (Acending Order)
+	> db.student.find({},{name:1,marks:1,_id:0}).sort({name:11})    (DESCENDING Order)
