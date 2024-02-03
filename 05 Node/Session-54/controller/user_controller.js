@@ -25,5 +25,16 @@ const addUser= async (req,res)=>{
         })
     }
 }
+const getAllUsers=async (req,res)=>{
+    try {
+        const users=await UserModel.find();//fethc the dat6a from Database
+        res.status(200).json({
+            message:'User Fetched Successfully',
+            data:users
+        })
+    } catch (error) {
+        
+    }
+}
 
-module.exports={addUser}
+module.exports={addUser,getAllUsers}
