@@ -1,0 +1,27 @@
+> npm init -y
+> npm  install mongoose express dotenv nodemon
+> goto> package.json file and change this 
+
+"scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+> npm start
+
+> donload postman: https://www.postman.com/downloads/
+> choose method as POST>
+   LINK:    localhost:5000/api/user/
+
+   body>raw>json
+
+
+   {
+    "name":"Rohit Gajbhiye",
+    "email":"rg@gmail.com",
+    "username":"rohitG",
+    "password":"Rohit@123"
+}
+
+
+click on Send
