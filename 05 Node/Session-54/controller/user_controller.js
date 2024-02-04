@@ -37,4 +37,21 @@ const getAllUsers=async (req,res)=>{
     }
 }
 
-module.exports={addUser,getAllUsers}
+//get user by id
+const getUserById=async (req,res)=>{
+    const {id}=req.params;
+    try {
+        const user=await UserModel.findById(id);
+        res.status(200).json({
+            message:'User Fetched Successfully',
+            data:user
+        })
+        
+    } catch (error) {
+        res.status(500).json({
+            message:error.message
+        })
+    }
+}
+
+module.exports={addUser,getAllUsers,getUserById}
