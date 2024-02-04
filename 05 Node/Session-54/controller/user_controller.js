@@ -54,4 +54,42 @@ const getUserById=async (req,res)=>{
     }
 }
 
-module.exports={addUser,getAllUsers,getUserById}
+
+//delete user by id
+const deleteUserById=async (req,res)=>{
+    const {id}=req.params;
+    try {
+        const user=await UserModel.findByIdAndDelete(id);
+        res.status(200).json({
+            message:'User Deleted Successfully',
+            data:user
+        })
+        
+    } catch (error) {
+        res.status(500).json({
+            message:error.message
+        })
+    }
+}
+
+
+//uspdate user by id
+const updateUserById=async (req,res)=>{
+    const {id}=req.params;
+    try {
+        const user=await UserModel.findByIdAndUpdate(id,req.body);
+        res.status(200).json({
+            message:'User Updated Successfully',
+            data:req.body
+        })
+        
+    } catch (error) {
+        res.status(500).json({
+            message:error.message
+        })
+    }
+}
+
+
+
+module.exports={addUser,getAllUsers,getUserById,deleteUserById,updateUserById}
