@@ -1,0 +1,3 @@
+Streams: 
+-it is powerful concept of handling data flow;
+- it is used to handle data and u can read and write in node js
