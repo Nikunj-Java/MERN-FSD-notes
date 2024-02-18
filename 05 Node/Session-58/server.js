@@ -19,6 +19,8 @@ app.use("/api/product",require('./routes'));
 
 app.use((err,req,res,next)=>{
     res.status(500).json({error:'something went wrong'})
+    console.log(err);
+    
 })
 
 app.listen(5000,()=>{
