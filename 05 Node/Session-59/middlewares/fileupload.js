@@ -10,11 +10,23 @@ const storage=multer.diskStorage({
     }
 });
 
+const fileFilter=(req,file,cb)=>{
+    const allowedFileType=/jpeg|jpg|png/;
+    const extname=allowedFileType.test(file.originalname.toLowerCase());
+    const mimetype=allowedFileType.test(file.mimetype);
+    if(extname && mimetype){
+        return cb(null,true);
+    }else{
+        cb("Error Only jpeg|jpg|png files are Allowed")
+    }
+}
+
 const upload=multer({
     storage:storage,
     limits:{
         fileSize:1024*1024*5 //5mb
-    }
+    },
+    fileFilter:fileFilter
 })
 
 module.exports=upload
