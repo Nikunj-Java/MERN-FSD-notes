@@ -14,5 +14,23 @@ const addProduct=async(req,res)=>{
     }
 }
 
+const getAllProducts=async(req,res)=>{
+    try {
+        const data= await ProductModel.find();
+        res.status(200).send(data);
+    } catch (error) {
+        res.status(500).send({message:"innternal Error Occured"})
+    }
+}
 
-module.exports={addProduct}
+const getProductById=async(req,res)=>{
+    try {
+        const data= await ProductModel.findOne({_id:req.params.id});
+        res.status(200).send(data);
+    } catch (error) {
+        res.status(500).send({message:"innternal Error Occured"})
+    }
+}
+
+
+module.exports={addProduct,getAllProducts,getProductById}
