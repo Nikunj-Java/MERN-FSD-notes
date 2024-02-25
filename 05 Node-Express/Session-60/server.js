@@ -1,8 +1,7 @@
 const express=require('express');
-const paypal=require('paypal-rest-sdk');
+const paypal= require('paypal-rest-sdk');
 require('dotenv').config();
-
-const app=express();
+const app= express();
 app.use(express.json())
 paypal.configure({
     mode:'sandbox',
@@ -12,56 +11,53 @@ paypal.configure({
 
 app.post('/create-payment',async(req,res)=>{
     const {product,quantity}=req.body;
-    var create_payment_json={
-        "intent":"sale",
-        "payer":{
-            "payment_method":"paypal"
+    var create_payment_json = {
+        "intent": "sale",
+        "payer": {
+            "payment_method": "paypal"
         },
-        "redirect_urls":{
-            "return_url":"http://localhost:3000/success",
-            "cancel_url":"http://localhost:3000/cancel",
+        "redirect_urls": {
+            "return_url": "http://localhost:3000/success",
+            "cancel_url": "http://localhost:3000/cancel"
         },
-        "transactions":[{
-            "item_list":{
-                "items":[{
-                    "name":product.name,
-                    "sku":product.name,
-                    "price":product.price,
-                    "currency":"USD",
-                    "quantity":quantity
+        "transactions": [{
+            "item_list": {
+                "items": [{
+                    "name": product.name,
+                    "sku": product.name,
+                    "price": product.price,
+                    "currency": "USD",
+                    "quantity": quantity
                 }]
             },
-            "amount":{
-                "currency":"USD",
-                "total":product.price * quantity
+            "amount": {
+                "currency": "USD",
+                "total": product.price * quantity
             },
-            "descritpion":"This is payment description."
+            "description": "This is the payment description."
         }]
     };
 
-    paypal.payment.create(create_payment_json,function(error,payment){
-
-        if(error){
+    paypal.payment.create(create_payment_json, function (error, payment) {
+        if (error) {
             throw error;
-        }else{
+        } else {
             console.log(payment);
-            for(let i=0; i<payment.links.length;i++){
-                if(payment.links[i].rel=='approve_url'){
-                    return res.redirect(payment.links[i].href);
+            for(let i=0;i<payment.links.length;i++){
+                if(payment.links[i].rel==='approval_url'){
+                  return res.redirect(payment.links[i].href);
                 }
             }
         }
-    })
-
+    });
+     
 })
 
-
 app.get('/success',(req,res)=>{
-
-    const payerId=req.query.payerId;
+    const payerId=req.query.PayerID;
     const paymentId=req.query.paymentId;
     const execute_json={
-        payer_Id:payerId,
+        payer_id:payerId,
         transactions:[{
             amount:{
                 currency:'USD',
@@ -69,13 +65,13 @@ app.get('/success',(req,res)=>{
             }
         }]
     }
-    paypal.payment.execute(payerId,execute_json,(err,payment)=>{
+    paypal.payment.execute(paymentId,execute_json,(err,payment)=>{
         if(err){
             console.log(err);
             throw err;
         }else{
             console.log(JSON.stringify(payment));
-            res.send("Payment Successfull");
+            res.send("Payment Successfull")
         }
     })
 })
@@ -85,5 +81,5 @@ app.get('/error',(req,res)=>{
 })
 
 app.listen(5000,()=>{
-    console.log("Server Started");
+    console.log("server started");
 })
