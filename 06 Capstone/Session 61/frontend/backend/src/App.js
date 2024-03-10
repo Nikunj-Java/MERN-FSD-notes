@@ -5,17 +5,21 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import {BrowserRouter as Router,Route,Routes,Navigate } from 'react-router-dom';
+import Dashboard from './components/Dashboard';
 
 function App() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  const [loggedin, setLoggedin] = useState(false);
   const handleSignup = async () => {
     try {
 
       const response = await axios.post('http://localhost:5000/signup', { username, password });
       console.log(response.data);
       setMessage(response.data.message);
+      
     } catch (error) {
       console.log(error.message);
       setMessage('Error Signing up! Try Again');
@@ -28,6 +32,10 @@ function App() {
       const response = await axios.post('http://localhost:5000/login', { username, password });
       console.log(response.data);
       setMessage(response.data.message);
+      if(response.data.success){
+        setLoggedin(true);
+        Navigate('/Dashboard')
+      }
     } catch (error) {
       console.log(error.message);
       setMessage('Error Signing up! Try Again');
@@ -36,6 +44,13 @@ function App() {
 
 
   return (
+    <Router>
+
+<Routes>
+<Route path="/" element={loggedin ? <Dashboard/>:<Navigate to="/" />}/>
+    
+</Routes>
+    
     <div className='row'>
       <div className='col'>
       <div className='container text-center'>
@@ -104,7 +119,7 @@ function App() {
   <p className='text-danger'>{message}</p>
 </div>
     </div>
-    
+    </Router>
   );
 }
 
